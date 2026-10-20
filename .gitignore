@@ -1,0 +1,15 @@
+# Datos y embeddings: pesan GB, viven en Google Drive
+data/
+*.npy
+*.npz
+*.pt
+*.pth
+*.tar.gz
+*.zip
+
+# Archivos de herramientas locales
+.atl/
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+.vscode/
