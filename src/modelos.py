@@ -36,6 +36,26 @@ def predecir_logits(modelo, xs):
     return modelo(xs).cpu().numpy()
 
 
+def cargar_artefactos(ruta, device='cpu'):
+    """Lee los artefactos guardados por el notebook 06 y reconstruye los modelos.
+
+    Devuelve el diccionario guardado, con 'modelos' convertido en {(nombre, semilla): Clasificador}.
+    weights_only=False porque el archivo trae arrays de numpy (estandarización, umbrales); usar
+    solo con archivos propios.
+    """
+    art = torch.load(ruta, map_location=device, weights_only=False)
+    dims = {m: len(mu) for m, (mu, _) in art['stats_estandarizacion'].items()}
+    modelos = {}
+    for clave, estado in art['modelos'].items():
+        nombre, semilla = clave.rsplit('_s', 1)
+        modelo = Clasificador([dims[m] for m in art['modalidades'][nombre]], art['config']['dim_proy'],
+                              art['config']['dropout'], len(art['generos_entrenamiento']))
+        modelo.load_state_dict(estado)
+        modelos[(nombre, int(semilla))] = modelo.to(device).eval()
+    art['modelos'] = modelos
+    return art
+
+
 def entrenar(xs_tr, y_tr, xs_dev, y_dev, cfg, semilla):
     """Entrena con early stopping sobre el AP macro de dev.
 

@@ -46,6 +46,20 @@ def ap_por_clase(Y, score):
     return np.array([average_precision_score(Y[:, c], score[:, c]) for c in range(Y.shape[1])])
 
 
+def ap_por_clase_rapido(Y, score):
+    """AP de cada clase vectorizado (para bootstrap). Coincide con sklearn salvo empates de score.
+
+    Clases sin positivos devuelven NaN.
+    """
+    orden = np.argsort(-score, axis=0, kind='stable')
+    y = np.take_along_axis(Y, orden, axis=0)
+    tp = np.cumsum(y, axis=0)
+    precision = tp / np.arange(1, len(Y) + 1)[:, None]
+    n_pos = y.sum(0)
+    with np.errstate(invalid='ignore', divide='ignore'):
+        return (precision * y).sum(0) / n_pos
+
+
 # --- Inferencia ------------------------------------------------------------------
 
 def ic95(x):
