@@ -58,6 +58,18 @@ Todos los encoders se usan **congelados**: solo se entrenan capas pequeñas enci
 | 09 | `09_buscador_semantico` | Buscador con CLIP multilingüe: por póster, por sinopsis o ambos |
 | 10 | `10_buscador_evaluacion` | Sinopsis con E5 y evaluación del buscador (precision@10, mAP) |
 | 11 | `11_buscador_adaptado` | Adaptador entrenado por modalidad: representación y búsqueda antes vs. después |
+| 12 | `12_buscador_recientes` | Agrega al buscador las películas 2020-2026 (sin reentrenar) y mide el efecto de la fuente y de la época en la búsqueda |
+| 13 | `13_app_buscador` | App web del buscador en Streamlit (MM-IMDB + estrenos 2020-2026) |
+
+Los notebooks 01-08 son la base común. Desde ahí hay dos líneas:
+
+- **Buscador (09-13):** búsqueda semántica por póster y sinopsis, y su app.
+- **Clasificación y desbalance (C1, C2, …):** métodos para corregir el desbalance entre modalidades en la
+  clasificación de géneros, sobre los modelos del 06 y los grupos del 08.
+
+| # | Notebook | Qué hace |
+| --- | --- | --- |
+| C1 | `C1_fusion_incertidumbre` | Fusión ponderada por incertidumbre (compuerta por entropía) contra la fusión ingenua, en los cuatro grupos del 08 |
 
 `multimodal_exploration.ipynb` es un notebook didáctico que construye un mini-CLIP desde cero.
 
@@ -82,14 +94,32 @@ puntos, así que con encoders congelados la imagen sí aporta.
 - El adaptador mejora la búsqueda en los 22 géneros evaluados y separa mejor los géneros en el espacio de
   representaciones.
 
-Los resultados de la comparación temporal (notebooks 06-08) se agregarán cuando estén completos.
+**Diagnóstico del desbalance (notebook 06, etiquetas de IMDb hoy, test, 5 semillas):**
+
+- La fusión (AP macro 63.8) supera al texto solo (59.1) y a la imagen sola (44.3): con encoders congelados no
+  aparece la *greedy modality* clásica.
+- Pero la fusión depende sobre todo del texto: al apagar la imagen cae 6.3 puntos de AP y al apagar el texto
+  cae 25.1 (índice de dependencia de la imagen 0.20). La información nueva que aporta la imagen dado el texto es
+  0.29 nats por película (IC 95% [0.27, 0.31]).
+- Las tres ramas están igual de levemente sobreconfiadas (temperatura ≈ 1.08), y la fusión tardía con pesos fijos
+  no le gana a la concatenación.
+
+**Comparación temporal (notebooks 07 y 08, mismos modelos sin reentrenar, bootstrap por películas):**
+
+- **Fuente** (mismas películas con póster y sinopsis de TMDB en vez de MM-IMDB): sin efecto detectable en el AP.
+- **Época** (películas 2020-2026 contra el control, ambos de TMDB): el texto pierde 4.1 puntos de AP
+  (IC [−6.9, −1.1]) y la imagen no cambia (+0.1). La fusión pasa a depender más de la imagen (índice 0.22 → 0.27)
+  y la información que aporta la imagen dado el texto sube de 0.32 a 0.46 nats. **El desbalance entre modalidades
+  no es fijo: cambia con la época de las películas.**
+- La caída del texto se mantiene dentro de los mismos tercios de popularidad, así que no es un efecto de que las
+  recientes sean más votadas.
 
 ## Estructura del repositorio
 
 | Carpeta | Contenido |
 | --- | --- |
-| `notebooks/` | Notebooks del 01 al 11 (se abren en Colab con el botón de cada uno) |
-| `src/` | Código compartido: carga de datos, encoders, modelos y métricas |
+| `notebooks/` | Notebooks 01-13 y C1… (se abren en Colab con el botón de cada uno) |
+| `src/` | Código compartido: carga de datos, encoders, modelos, métricas, fusión y buscador |
 | `docs/` | Propuesta inicial, brief y material de estudio |
 | `results/` | Tablas y figuras de resultados |
 | `configs/`, `scripts/` | Parámetros y scripts ejecutables |
@@ -103,9 +133,15 @@ Mi unidad/proyecto_multimodal/
 ├── data/          # parquets (meta, años, TMDB), miniaturas de pósters
 ├── embeddings/    # vectores .npy (CLIP, DistilBERT, E5, adaptados)
 ├── modelos/       # pesos de los adaptadores del buscador
-└── results/       # métricas en CSV
+├── results/       # clasificación y comparación temporal (06-08, C1…): CSV y artefactos de los modelos
+├── resultados/    # buscador (10-12): CSV
+└── app_buscador/  # lo que exporta el notebook 13
 ```
 
+Todo tiene que estar en **una sola carpeta** `proyecto_multimodal`: si la corren dos personas, una la comparte
+y la otra agrega un acceso directo a ella en su `Mi unidad`. El notebook 12, por ejemplo, usa a la vez archivos
+del 07 (TMDB) y del 11 (adaptadores).
+
 1. Abrir cada notebook en Colab (botón *Open in Colab*) y correrlo **en orden** desde el 01.
-2. Usar GPU (T4) para el 03, 07 y 10. El resto funciona en CPU.
+2. Usar GPU (T4) para el 03, 07, 10 y 12. El resto funciona en CPU.
 3. El notebook 07 necesita una llave gratuita de la API de TMDB.

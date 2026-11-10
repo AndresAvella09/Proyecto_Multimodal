@@ -75,7 +75,7 @@ def combinar(modelo, Z):
 
 
 def cargar_compuertas(ruta):
-    """Lee lo guardado por el notebook 09: devuelve el diccionario con 'compuertas' como
+    """Lee lo guardado por el notebook C1: devuelve el diccionario con 'compuertas' como
     {(metodo, semilla): CompuertaIncertidumbre}."""
     art = torch.load(ruta, map_location='cpu', weights_only=False)
     compuertas = {}
