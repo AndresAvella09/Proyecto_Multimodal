@@ -14,6 +14,12 @@ por **género**.
 **Pregunta central:** ¿el modelo depende más del póster o de la sinopsis, y ese desbalance cambia con
 películas más recientes?
 
+**Respuesta corta:** la fusión depende sobre todo de la sinopsis (índice de dependencia de la imagen 0.20), y con
+películas de 2020-2026 la sinopsis pierde ~4 puntos de AP mientras el póster se mantiene. Ese cambio no es un
+desbalance de aprendizaje que se pueda corregir repesando o modulando el entrenamiento: el texto de las películas
+nuevas **se equivoca con seguridad**, sin anunciar su incertidumbre. En la búsqueda semántica, en cambio, las
+películas nuevas se encuentran igual de bien.
+
 El proyecto tiene dos partes que comparten datos y representaciones:
 
 1. **Comparación temporal:** se entrenan clasificadores de género con MM-IMDB (películas hasta 2016) y se
@@ -64,24 +70,83 @@ Todos los encoders se usan **congelados**: solo se entrenan capas pequeñas enci
 Los notebooks 01-08 son la base común. Desde ahí hay dos líneas:
 
 - **Buscador (09-13):** búsqueda semántica por póster y sinopsis, y su app.
-- **Clasificación y desbalance (C1, C2, …):** métodos para corregir el desbalance entre modalidades en la
+- **Clasificación y desbalance (C1-C3):** métodos para corregir el desbalance entre modalidades en la
   clasificación de géneros, sobre los modelos del 06 y los grupos del 08.
 
 | # | Notebook | Qué hace |
 | --- | --- | --- |
 | C1 | `C1_fusion_incertidumbre` | Fusión ponderada por incertidumbre (compuerta por entropía) contra la fusión ingenua, en los cuatro grupos del 08 |
-| C2 | `C2_dial_degradacion` | Provoca el desbalance: degrada una modalidad en test (borrado vs. ruido) y entrena con pocos datos; compuerta ajustada con degradación sintética |
+| C2 | `C2_dial_degradacion` | Provoca el desbalance: degrada una modalidad en test (borrado, ruido y mezcla con otra película) y entrena con pocos datos; compuerta ajustada con degradación sintética |
 | C3 | `C3_ogm_ge_tabla_final` | OGM-GE (modulación del gradiente por modalidad), tabla final con todos los métodos en los cuatro grupos y análisis de fallos |
 
 `multimodal_exploration.ipynb` es un notebook didáctico que construye un mini-CLIP desde cero.
 
-## Resultados principales (hasta ahora)
+## Resultados principales
 
-**Clasificación de géneros (notebook 04, F1 macro en test, 5 semillas):**
-solo póster 47.7 · solo sinopsis 59.1 · **fusión 63.6**. La fusión supera a la sinopsis sola por +4.5 ± 0.2
-puntos, así que con encoders congelados la imagen sí aporta.
+### 1. Clasificación de géneros (notebooks 04 y 06)
 
-**Buscador (notebooks 10 y 11, 88 búsquedas de género en español e inglés, solo películas de test):**
+F1 macro en test, 5 semillas: solo póster 47.7 · solo sinopsis 59.1 · **fusión 63.6**. La fusión supera a la
+sinopsis sola por +4.5 ± 0.2 puntos: con encoders congelados la imagen sí aporta.
+
+### 2. Diagnóstico del desbalance (notebook 06, etiquetas de IMDb hoy, test, 5 semillas)
+
+- La fusión (AP macro 63.8) supera al texto solo (59.1) y a la imagen sola (44.3): con encoders congelados no
+  aparece la *greedy modality* clásica.
+- Pero la fusión depende sobre todo del texto: al apagar la imagen cae 6.3 puntos de AP y al apagar el texto
+  cae 25.1 (índice de dependencia de la imagen 0.20). La información nueva que aporta la imagen dado el texto es
+  0.29 nats por película (IC 95% [0.27, 0.31]).
+- Las tres ramas están igual de levemente sobreconfiadas (temperatura ≈ 1.08), y la fusión tardía con pesos fijos
+  no le gana a la concatenación.
+
+### 3. Comparación temporal (notebooks 07 y 08, mismos modelos sin reentrenar)
+
+- **Fuente** (mismas películas con póster y sinopsis de TMDB en vez de MM-IMDB): sin efecto detectable en el AP.
+- **Época** (películas 2020-2026 contra el control, ambos de TMDB): el texto pierde 4.1 puntos de AP
+  (IC [−6.9, −1.1]) y la imagen no cambia (+0.1). La fusión pasa a depender más de la imagen (índice 0.22 → 0.27)
+  y la información que aporta la imagen dado el texto sube de 0.32 a 0.46 nats. **El desbalance entre modalidades
+  no es fijo: cambia con la época de las películas.**
+- La caída del texto se mantiene dentro de los mismos tercios de popularidad, así que no es un efecto de que las
+  recientes sean más votadas.
+
+### 4. ¿Se puede corregir? (notebooks C1-C3)
+
+| Método | Notebook | Idea | AP − ingenua en test | AP − ingenua en recientes |
+| --- | --- | --- | --- | --- |
+| `tardia` / `compuerta` | C1 | Pesos por género / más peso a la rama segura en cada película | +0.09 / +0.09 | −0.04 / −0.06 |
+| **`tardia3` / `compuerta3`** | C1 | Lo mismo, con la fusión ingenua como tercera fuente | **+0.39 \*** / **+0.38 \*** | +0.30 / +0.30 |
+| `tardia_aum` / `compuerta_aum` | C2 | Compuerta ajustada con copias degradadas de dev | −0.17 / −0.36 \* | −0.36 / −0.42 |
+| `ogm` / `ogm_ge` | C3 | Frenar el gradiente de la modalidad dominante (OGM-GE) | −0.03 / +0.05 | −0.08 / −0.13 |
+
+Puntos de AP macro contra la fusión ingenua, bootstrap por películas (\* = IC 95% sin el 0). Ningún método
+mejora con significancia en las recientes, ni gana más en las recientes que en el control.
+
+- **C1 — La entropía no avisa.** Con las recientes, la entropía del texto casi no cambia (0.186 → 0.192), pero su
+  *exceso* de sorpresa (log-loss − entropía) pasa de 0.001 a 0.028: **el texto se equivoca con seguridad**. La
+  compuerta aprende β < 0 (modera a la rama segura) y su peso para la imagen no sube en las recientes. Un oráculo
+  ajustado con las propias recientes no mejora: el límite es la información que recibe la compuerta.
+- **C2 — Provocar el desbalance.** Degradando una modalidad en test:
+  - *Borrado* (encoger el embedding): el texto mantiene su AP pero triplica su entropía; queda subconfiado.
+  - *Ruido*: pierde AP y también queda subconfiado.
+  - *Mezcla con otra película* (exploratoria): el AP del texto cae de 0.59 a 0.21 con la **entropía igual** y el
+    exceso positivo, el mismo patrón de las recientes, que equivalen a una mezcla de ρ ≈ 0.2.
+
+  En todo el dial, el término de entropía no agrega nada a la fusión tardía. Lo que sí ayuda cuando el texto se
+  daña fuerte es mover el peso fijo hacia la imagen (+3.9 puntos con mezcla ρ = 0.8), pero con el daño leve de las
+  recientes ese cambio cuesta más de lo que gana. Entrenando con solo el 2% del train la fusión sigue ganándole a
+  la mejor rama (+3.6 puntos): **no aparece greedy modality ni con pocos datos**.
+- **C3 — Modular el entrenamiento.** OGM-GE casi no actúa: según su propia medida las modalidades ya aportan
+  parecido (razón ≈ 0.95), y el índice de dependencia no cambia (0.20 → 0.19). La fusión depende más del texto
+  porque el texto trae más información, no porque la imagen haya aprendido menos.
+- **Análisis de fallos.** Por género, la fusión hereda el cambio del texto (r = 0.95). Lo que más pierde el texto
+  con la época: War (−25 puntos), Musical (−23), Family, Sci-Fi y Documentary (−17). En las películas donde falla
+  con seguridad, el texto cae a géneros "por defecto" (Drama, Romance, Comedy) en películas de terror, thriller o
+  animación, y la imagen acierta más.
+
+**Conclusión:** el desplazamiento de época no es un desbalance de aprendizaje sino un **error seguro del texto**.
+Ni repesar las modalidades al combinar (con la confianza de cada rama) ni modular los gradientes al entrenar lo
+detecta, porque la rama que falla no anuncia su incertidumbre.
+
+### 5. Buscador semántico (notebooks 10-12, 88 búsquedas de género en español e inglés)
 
 | Forma de buscar | mAP sin entrenar | mAP con adaptador |
 | --- | --- | --- |
@@ -95,35 +160,23 @@ puntos, así que con encoders congelados la imagen sí aporta.
   la calidad de la representación de cada modalidad**.
 - El adaptador mejora la búsqueda en los 22 géneros evaluados y separa mejor los géneros en el espacio de
   representaciones.
-
-**Diagnóstico del desbalance (notebook 06, etiquetas de IMDb hoy, test, 5 semillas):**
-
-- La fusión (AP macro 63.8) supera al texto solo (59.1) y a la imagen sola (44.3): con encoders congelados no
-  aparece la *greedy modality* clásica.
-- Pero la fusión depende sobre todo del texto: al apagar la imagen cae 6.3 puntos de AP y al apagar el texto
-  cae 25.1 (índice de dependencia de la imagen 0.20). La información nueva que aporta la imagen dado el texto es
-  0.29 nats por película (IC 95% [0.27, 0.31]).
-- Las tres ramas están igual de levemente sobreconfiadas (temperatura ≈ 1.08), y la fusión tardía con pesos fijos
-  no le gana a la concatenación.
-
-**Comparación temporal (notebooks 07 y 08, mismos modelos sin reentrenar, bootstrap por películas):**
-
-- **Fuente** (mismas películas con póster y sinopsis de TMDB en vez de MM-IMDB): sin efecto detectable en el AP.
-- **Época** (películas 2020-2026 contra el control, ambos de TMDB): el texto pierde 4.1 puntos de AP
-  (IC [−6.9, −1.1]) y la imagen no cambia (+0.1). La fusión pasa a depender más de la imagen (índice 0.22 → 0.27)
-  y la información que aporta la imagen dado el texto sube de 0.32 a 0.46 nats. **El desbalance entre modalidades
-  no es fijo: cambia con la época de las películas.**
-- La caída del texto se mantiene dentro de los mismos tercios de popularidad, así que no es un efecto de que las
-  recientes sean más votadas.
+- **Películas 2020-2026 (notebook 12, sin reentrenar):** a diferencia de la clasificación, la búsqueda **no
+  envejece**. Sin adaptador las recientes se buscan mejor que el control (+0.048 AP, IC sin el 0); con el
+  adaptador del 11 la diferencia desaparece (+0.009, IC [−0.026, +0.042]). La fuente no tiene efecto y el mejor
+  peso del póster es 0.4 en todos los grupos. Una explicación posible: E5 es más nuevo que DistilBERT y está hecho
+  para buscar.
+- **Catálogo mezclado de la app:** con la estandarización global, los estrenos salían 1.7 veces más de lo que les
+  corresponde en el top 50, y el doble entre los errores. El sesgo viene de la época, no de la fuente. Estandarizar
+  los puntajes **dentro de cada fuente** lo baja a 1.16 y cuesta 0.002 de mAP; es la corrección que usa la app.
 
 ## Estructura del repositorio
 
 | Carpeta | Contenido |
 | --- | --- |
-| `notebooks/` | Notebooks 01-13 y C1… (se abren en Colab con el botón de cada uno) |
+| `notebooks/` | Notebooks 01-13 y C1-C3 (se abren en Colab con el botón de cada uno) |
 | `src/` | Código compartido: carga de datos, encoders, modelos, métricas, fusión y buscador |
 | `docs/` | Propuesta inicial, brief y material de estudio |
-| `results/` | Tablas y figuras de resultados |
+| `results/` | Tablas de resultados de clasificación (`exp1`-`exp6`) y del buscador (`results/buscador/`) |
 | `configs/`, `scripts/` | Parámetros y scripts ejecutables |
 
 ## Cómo reproducir
@@ -145,5 +198,5 @@ y la otra agrega un acceso directo a ella en su `Mi unidad`. El notebook 12, por
 del 07 (TMDB) y del 11 (adaptadores).
 
 1. Abrir cada notebook en Colab (botón *Open in Colab*) y correrlo **en orden** desde el 01.
-2. Usar GPU (T4) para el 03, 07, 10 y 12. El resto funciona en CPU.
+2. Usar GPU (T4) para el 03, 07, 10, 12 y C3. El resto funciona en CPU (el C2 tarda unos 10 minutos).
 3. El notebook 07 necesita una llave gratuita de la API de TMDB.
