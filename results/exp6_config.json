@@ -1,0 +1,63 @@
+{
+  "generos": [
+    "Drama",
+    "Comedy",
+    "Romance",
+    "Thriller",
+    "Crime",
+    "Action",
+    "Adventure",
+    "Horror",
+    "Documentary",
+    "Mystery",
+    "Sci-Fi",
+    "Fantasy",
+    "Family",
+    "Biography",
+    "War",
+    "History",
+    "Music",
+    "Animation",
+    "Musical",
+    "Sport"
+  ],
+  "semillas": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "alfas": [
+    0.1,
+    0.3,
+    0.5,
+    1.0
+  ],
+  "alfa_elegido": 0.1,
+  "n_bootstrap": 1000,
+  "semilla_bootstrap": 42,
+  "margen_no_inferioridad": 0.005,
+  "metodos": [
+    "ingenua",
+    "tardia",
+    "compuerta",
+    "tardia3",
+    "compuerta3",
+    "tardia_aum",
+    "compuerta_aum",
+    "ogm",
+    "ogm_ge"
+  ],
+  "origen": {
+    "ingenua": "06",
+    "tardia": "C1",
+    "compuerta": "C1",
+    "tardia3": "C1",
+    "compuerta3": "C1",
+    "tardia_aum": "C2",
+    "compuerta_aum": "C2",
+    "ogm": "C3",
+    "ogm_ge": "C3"
+  }
+}

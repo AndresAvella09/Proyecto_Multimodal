@@ -1,0 +1,68 @@
+{
+  "generos": [
+    "Drama",
+    "Comedy",
+    "Romance",
+    "Thriller",
+    "Crime",
+    "Action",
+    "Adventure",
+    "Horror",
+    "Documentary",
+    "Mystery",
+    "Sci-Fi",
+    "Fantasy",
+    "Family",
+    "Biography",
+    "War",
+    "History",
+    "Music",
+    "Animation",
+    "Musical",
+    "Sport"
+  ],
+  "semillas": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "semillas_pocos_datos": [
+    0,
+    1,
+    2
+  ],
+  "rhos": [
+    0.0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1.0
+  ],
+  "rhos_aumento": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "rho_criterios": 0.8,
+  "fracciones": [
+    0.02,
+    0.05,
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "fraccion_criterios": 0.05,
+  "margen_no_inferioridad": 0.005,
+  "metodos": [
+    "ingenua",
+    "tardia",
+    "compuerta",
+    "tardia_aum",
+    "compuerta_aum"
+  ]
+}

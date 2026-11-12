@@ -1,0 +1,5 @@
+criterio,valor,cumple
+1. ogm_ge: más dependencia de la imagen que la ingenua,-0.006 ± 0.011,False
+2. ogm_ge no inferior en test_mmimdb,"+0.05 [-0.06, +0.17] pts",True
+3. ogm_ge mejora en recientes_tmdb,"-0.13 [-0.30, +0.06] pts",False
+4. ganancia mayor en recientes que en control,"-0.35 [-0.64, +0.04] pts",False

@@ -1,0 +1,13 @@
+prediccion,valor,cumple
+P1. borrar el texto (ρ=0.8) sube su entropía,+0.414 ± 0.001 nats,True
+P2. el exceso del texto sube más con ruido que con borrado (ρ=0.8),+0.129 ± 0.005 nats,True
+P3. borrado del texto (ρ=0.8): compuerta_aum > tardia_aum,-1.18 ± 0.04 pts,False
+P4. esa ganancia es mayor con borrado que con ruido,-0.87 ± 0.00 pts,False
+"P5. en test limpio, compuerta_aum no pierde más de 0.5 pts contra la ingenua",-0.27 ± 0.11 pts,True
+P6. índice de dependencia de la imagen menor con 5% que con 100%,-0.016 ± 0.050,False
+P7. ventaja de tardia sobre la ingenua mayor con 5% que con 100%,+0.44 ± 1.14 pts,False
+(sin predicción) compuerta_aum − ingenua en recientes_tmdb,-0.420 ± 0.174 pts,
+(exploratoria) mezcla del texto (ρ=0.8): cambio del exceso,+0.148 ± 0.001 nats,
+(exploratoria) mezcla del texto (ρ=0.8): compuerta − ingenua,+2.09 ± 0.46 pts,
+(exploratoria) mezcla del texto (ρ=0.8): tardia_aum − ingenua,+3.87 ± 0.39 pts,
+(exploratoria) mezcla del texto (ρ=0.8): compuerta_aum − tardia_aum,-0.30 ± 0.05 pts,

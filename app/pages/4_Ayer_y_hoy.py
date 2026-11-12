@@ -250,6 +250,48 @@ with tab_metodos:
                                 'igual. En todo el dial el término de entropía no agrega nada a la fusión tardía.'),
                     unsafe_allow_html=True)
 
+    st.markdown('### C2 · Pocos datos: ¿aparece una modalidad golosa?')
+    pocos = leer('exp5_pocos_datos.csv')
+    if pocos is None:
+        falta('exp5_pocos_datos.csv')
+    else:
+        pm = pocos.groupby(['fraccion', 'n_train']).mean(numeric_only=True).reset_index().sort_values('fraccion')
+        etiqueta_x = [f'{100 * f:g} %' for f in pm['fraccion']]
+        hover = [f'{n:,} películas' for n in pm['n_train']]
+        c1, c2 = st.columns(2)
+        fig = go.Figure()
+        for col, nombre, color, guion in [('ap_imagen', 'Solo póster', ROJO, 'dash'), ('ap_texto', 'Solo sinopsis', BLANCO, 'dash'),
+                                          ('ap_ingenua', 'Fusión ingenua', AMBAR, 'solid'),
+                                          ('ap_tardia', 'Fusión tardía', GRIS, 'dot')]:
+            if col in pm:
+                fig.add_scatter(x=etiqueta_x, y=100 * pm[col], name=nombre, mode='lines+markers', text=hover,
+                                line=dict(color=color, dash=guion),
+                                hovertemplate='%{x} de train (%{text}): %{y:.1f}<extra>' + nombre + '</extra>')
+        fig.update_xaxes(title='fracción de train', type='category')
+        fig.update_yaxes(title='AP macro (puntos)')
+        c1.plotly_chart(comun.estilo_plotly(fig, alto=340, titulo='AP en test según cuántos datos de entrenamiento'),
+                        width='stretch', config=CONFIG)
+        fig = go.Figure()
+        fig.add_scatter(x=etiqueta_x, y=100 * pm['ganancia_fusion'], name='fusión − mejor rama sola', mode='lines+markers',
+                        line=dict(color=AMBAR), text=hover,
+                        hovertemplate='%{x} (%{text}): %{y:+.1f} pts<extra></extra>')
+        fig.add_scatter(x=etiqueta_x, y=pm['indice_dependencia_imagen'], name='dependencia del póster (0-1)',
+                        mode='lines+markers', line=dict(color=ROJO), yaxis='y2', text=hover,
+                        hovertemplate='%{x} (%{text}): %{y:.2f}<extra></extra>')
+        fig.update_xaxes(title='fracción de train', type='category')
+        fig.update_layout(yaxis=dict(title='ganancia de la fusión (puntos)', rangemode='tozero'),
+                          yaxis2=dict(overlaying='y', side='right', showgrid=False, title='dependencia', range=[0, 1]))
+        c2.plotly_chart(comun.estilo_plotly(fig, alto=340, titulo='¿La fusión sigue usando las dos?', leyenda='abajo'),
+                        width='stretch', config=CONFIG)
+        chico = pm.iloc[0]
+        st.markdown(comun.ficha('Qué significa',
+                                f'Con solo el <b>{100 * chico["fraccion"]:g} %</b> de train ({int(chico["n_train"]):,} '
+                                f'películas) la fusión supera a la mejor rama sola por <b>{100 * chico["ganancia_fusion"]:.1f}'
+                                f'</b> puntos, y el póster sigue aportando (dependencia {chico["indice_dependencia_imagen"]:.2f}). '
+                                'Si hubiera una modalidad golosa, con pocos datos la fusión se pegaría a una sola rama y '
+                                'la ganancia caería a cero. No pasa: el problema de las recientes no es de aprendizaje.'),
+                    unsafe_allow_html=True)
+
     st.markdown('### C3 · Modular el entrenamiento (OGM-GE)')
     eq = leer('exp6_equilibrio.csv')
     if eq is None:
