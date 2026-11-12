@@ -1,0 +1,11 @@
+metodo,criterio,valor,cumple
+compuerta,1. no inferior en test_mmimdb (AP),IC inf -0.20 pts (margen −0.5),True
+compuerta,2. mejora en recientes_tmdb (AP),"-0.06 [-0.58, +0.40] pts",False
+compuerta,3a. beta distinto de 0,-0.417 ± 0.042,True
+compuerta,3b. log-loss menor que tardia en recientes,"-0.0044 [-0.0070, -0.0016] nats",True
+compuerta,4. ganancia mayor en recientes que en control,"-0.19 [-1.09, +0.67] pts",False
+compuerta3,1. no inferior en test_mmimdb (AP),IC inf +0.19 pts (margen −0.5),True
+compuerta3,2. mejora en recientes_tmdb (AP),"+0.30 [-0.12, +0.65] pts",False
+compuerta3,3a. beta distinto de 0,-0.730 ± 0.106,True
+compuerta3,3b. log-loss menor que tardia3 en recientes,"-0.0058 [-0.0088, -0.0026] nats",True
+compuerta3,4. ganancia mayor en recientes que en control,"-0.17 [-0.79, +0.43] pts",False

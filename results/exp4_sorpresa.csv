@@ -1,0 +1,16 @@
+conjunto,modelo,entropia_media,logloss_medio,exceso
+dev_mmimdb,imagen,0.22170165,0.22170165,0.0
+dev_mmimdb,texto,0.18381801,0.18381785,-1.6391277e-07
+dev_mmimdb,fusion_ingenua,0.16969122,0.16969131,8.940697e-08
+test_mmimdb,imagen,0.22133556,0.22227232,0.0009367615
+test_mmimdb,texto,0.18519667,0.18364902,-0.0015476495
+test_mmimdb,fusion_ingenua,0.17031078,0.1691988,-0.0011119843
+control_mmimdb,imagen,0.22024064,0.2229919,0.002751261
+control_mmimdb,texto,0.186317,0.18743293,0.0011159331
+control_mmimdb,fusion_ingenua,0.17045693,0.17272004,0.0022631139
+control_tmdb,imagen,0.22588623,0.22523451,-0.0006517172
+control_tmdb,texto,0.17820427,0.1935343,0.0153300315
+control_tmdb,fusion_ingenua,0.16582564,0.17735869,0.011533052
+recientes_tmdb,imagen,0.2235852,0.23873802,0.015152812
+recientes_tmdb,texto,0.19203493,0.22000065,0.027965724
+recientes_tmdb,fusion_ingenua,0.17471513,0.19679026,0.022075132

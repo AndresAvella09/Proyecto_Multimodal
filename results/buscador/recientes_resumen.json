@@ -1,0 +1,100 @@
+{
+  "n": {
+    "control": 1496,
+    "recientes": 2997
+  },
+  "generos": [
+    "Drama",
+    "Comedy",
+    "Romance",
+    "Thriller",
+    "Crime",
+    "Action",
+    "Adventure",
+    "Horror",
+    "Documentary",
+    "Mystery",
+    "Sci-Fi",
+    "Fantasy",
+    "Family",
+    "Biography",
+    "History",
+    "Music",
+    "Animation",
+    "Sport"
+  ],
+  "alfa": 0.5,
+  "map_despues": {
+    "control_mmimdb": {
+      "poster": 0.41312460593866185,
+      "sinopsis": 0.4864858622953633,
+      "ambos": 0.5515494175791112
+    },
+    "control_tmdb": {
+      "poster": 0.40996616607380154,
+      "sinopsis": 0.48315220527264635,
+      "ambos": 0.5563543974346161
+    },
+    "recientes_tmdb": {
+      "poster": 0.4255971795757303,
+      "sinopsis": 0.5134246929409354,
+      "ambos": 0.5649002696795642
+    }
+  },
+  "epoca": {
+    "poster": {
+      "diferencia": 0.015631013501928734,
+      "ic": [
+        -0.01553327729118564,
+        0.04533273084039079
+      ]
+    },
+    "sinopsis": {
+      "diferencia": 0.03027248766828912,
+      "ic": [
+        -0.007406456020436043,
+        0.06992460538728697
+      ]
+    },
+    "ambos": {
+      "diferencia": 0.00854587224494802,
+      "ic": [
+        -0.026152508105923504,
+        0.04239377383878325
+      ]
+    }
+  },
+  "fuente": {
+    "poster": {
+      "diferencia": -0.0031584398648602918,
+      "ic": [
+        -0.017292164014808993,
+        0.01166796692534595
+      ]
+    },
+    "sinopsis": {
+      "diferencia": -0.0033336570227170095,
+      "ic": [
+        -0.01870626148277383,
+        0.011575168951299624
+      ]
+    },
+    "ambos": {
+      "diferencia": 0.004804979855504907,
+      "ic": [
+        -0.009551541312418983,
+        0.01856536657221507
+      ]
+    }
+  },
+  "mejor_alfa_despues": {
+    "control_mmimdb": 0.4,
+    "control_tmdb": 0.4,
+    "recientes_tmdb": 0.4
+  },
+  "sesgo_cociente": {
+    "poster": 1.68342931637368,
+    "sinopsis": 1.5181880821829379,
+    "ambos": 1.7024650428713342
+  }
+}

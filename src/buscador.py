@@ -62,6 +62,34 @@ def puntajes(qp, qs, Vp, Vs, modo, alfa=0.5):
     raise ValueError(modo)
 
 
+CORRECCIONES = ['global', 'por_fuente', 'por_fuente_media']
+
+
+def normalizar(S, fuente, correccion='global'):
+    """Pone en escala comparable los puntajes de un catálogo que mezcla fuentes (MM-IMDB y TMDB).
+
+    S: (Q, n) similitudes crudas; fuente: (n,) etiqueta de la fuente de cada película.
+    - 'global': z-score sobre todo el catálogo (lo que hacía la app).
+    - 'por_fuente': z-score dentro de cada fuente; las dos quedan con la misma media y escala.
+    - 'por_fuente_media': solo se resta la media de cada fuente; la escala es la del catálogo entero.
+    """
+    if correccion == 'global':
+        return zscore(S)
+    out = np.empty_like(S, dtype=np.float32)
+    for f in np.unique(fuente):
+        m = fuente == f
+        out[:, m] = zscore(S[:, m]) if correccion == 'por_fuente' else S[:, m] - S[:, m].mean(1, keepdims=True)
+    if correccion == 'por_fuente_media':
+        out /= out.std(1, keepdims=True) + 1e-8
+    return out
+
+
+def puntajes_mixtos(qp, qs, Vp, Vs, fuente, modo, alfa=0.5, correccion='global'):
+    """Como `puntajes`, pero normalizando cada modalidad según `correccion` (ver `normalizar`)."""
+    zp, zs = normalizar(qp @ Vp.T, fuente, correccion), normalizar(qs @ Vs.T, fuente, correccion)
+    return {'poster': zp, 'sinopsis': zs, 'ambos': alfa * zp + (1 - alfa) * zs}[modo]
+
+
 class Adaptador(nn.Module):
     """El adaptador residual del notebook 11: v' = normalizar(v + W v). Misma estructura para poder
     cargar sus pesos (modelos/adaptador_{poster,sinopsis}_s{semilla}.pt)."""

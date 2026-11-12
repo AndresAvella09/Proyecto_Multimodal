@@ -1,0 +1,1057 @@
+genero,idioma,tipo,texto,p@10,AP,version,modo,etapa
+Drama,es,frase,una película dramática,0.6,0.5932885752769347,antes,poster,antes
+Drama,es,palabra,drama,0.7,0.595077564095889,antes,poster,antes
+Drama,en,frase,a drama movie,0.8,0.5958226456600031,antes,poster,antes
+Drama,en,palabra,drama,0.7,0.595077564095889,antes,poster,antes
+Comedy,es,frase,una película de comedia,0.7,0.542762867691698,antes,poster,antes
+Comedy,es,palabra,comedia,0.6,0.5376868549936917,antes,poster,antes
+Comedy,en,frase,a comedy movie,0.7,0.5459626732637755,antes,poster,antes
+Comedy,en,palabra,comedy,0.7,0.5538244833692698,antes,poster,antes
+Romance,es,frase,una película romántica,0.8,0.3625468744120278,antes,poster,antes
+Romance,es,palabra,romance,0.7,0.35397601018760627,antes,poster,antes
+Romance,en,frase,a romantic movie,0.8,0.334400751803993,antes,poster,antes
+Romance,en,palabra,romance,0.7,0.35397601018760627,antes,poster,antes
+Thriller,es,frase,una película de suspenso,0.3,0.15300726399125686,antes,poster,antes
+Thriller,es,palabra,suspenso,0.1,0.12304619102134583,antes,poster,antes
+Thriller,en,frase,a thriller movie,0.2,0.2722764421420657,antes,poster,antes
+Thriller,en,palabra,thriller,0.1,0.2496231360440883,antes,poster,antes
+Crime,es,frase,una película de crimen,0.8,0.3539772549952048,antes,poster,antes
+Crime,es,palabra,crimen,0.6,0.2881542969300358,antes,poster,antes
+Crime,en,frase,a crime movie,0.7,0.3115886254790676,antes,poster,antes
+Crime,en,palabra,crime,0.7,0.3025108809719971,antes,poster,antes
+Action,es,frase,una película de acción,0.5,0.25537323322762284,antes,poster,antes
+Action,es,palabra,acción,0.6,0.25032315823441087,antes,poster,antes
+Action,en,frase,an action movie,0.8,0.35175964996926395,antes,poster,antes
+Action,en,palabra,action,0.6,0.2639740168163735,antes,poster,antes
+Adventure,es,frase,una película de aventuras,0.6,0.2324573568886196,antes,poster,antes
+Adventure,es,palabra,aventura,0.5,0.2392900463481097,antes,poster,antes
+Adventure,en,frase,an adventure movie,0.6,0.25673171367988123,antes,poster,antes
+Adventure,en,palabra,adventure,0.6,0.2585444229796126,antes,poster,antes
+Horror,es,frase,una película de terror,0.9,0.390913329522379,antes,poster,antes
+Horror,es,palabra,terror,0.9,0.2119108206588859,antes,poster,antes
+Horror,en,frase,a horror movie,0.9,0.4960100352660621,antes,poster,antes
+Horror,en,palabra,horror,0.7,0.3735678813559346,antes,poster,antes
+Documentary,es,frase,un documental,0.3,0.1100273212096774,antes,poster,antes
+Documentary,es,palabra,documental,0.2,0.09967229339445866,antes,poster,antes
+Documentary,en,frase,a documentary,0.6,0.15049423860137878,antes,poster,antes
+Documentary,en,palabra,documentary,0.3,0.1324605492169244,antes,poster,antes
+Mystery,es,frase,una película de misterio,0.2,0.1283906729260128,antes,poster,antes
+Mystery,es,palabra,misterio,0.2,0.1074233515559025,antes,poster,antes
+Mystery,en,frase,a mystery movie,0.2,0.11451765352562496,antes,poster,antes
+Mystery,en,palabra,mystery,0.2,0.10725290829533288,antes,poster,antes
+Sci-Fi,es,frase,una película de ciencia ficción,0.7,0.25449366251558214,antes,poster,antes
+Sci-Fi,es,palabra,ciencia ficción,0.5,0.2148397799159297,antes,poster,antes
+Sci-Fi,en,frase,a science fiction movie,0.7,0.2650861806934314,antes,poster,antes
+Sci-Fi,en,palabra,sci-fi,0.8,0.21328474322941174,antes,poster,antes
+Fantasy,es,frase,una película de fantasía,0.2,0.10920989535870054,antes,poster,antes
+Fantasy,es,palabra,fantasía,0.2,0.0815803312690244,antes,poster,antes
+Fantasy,en,frase,a fantasy movie,0.6,0.13450387714191264,antes,poster,antes
+Fantasy,en,palabra,fantasy,0.1,0.10998684382436977,antes,poster,antes
+Family,es,frase,una película familiar,0.0,0.06432990337175631,antes,poster,antes
+Family,es,palabra,familia,0.1,0.059932704815601964,antes,poster,antes
+Family,en,frase,a family movie,0.0,0.07877355715212524,antes,poster,antes
+Family,en,palabra,family,0.2,0.06146760091664684,antes,poster,antes
+Biography,es,frase,una película biográfica,0.0,0.059624307326351156,antes,poster,antes
+Biography,es,palabra,biografía,0.1,0.07719607930622864,antes,poster,antes
+Biography,en,frase,a biographical movie,0.0,0.060342542715972905,antes,poster,antes
+Biography,en,palabra,biography,0.1,0.08098663536545903,antes,poster,antes
+War,es,frase,una película de guerra,0.4,0.12268751333953126,antes,poster,antes
+War,es,palabra,guerra,0.5,0.10494719457446375,antes,poster,antes
+War,en,frase,a war movie,0.4,0.12498918668574213,antes,poster,antes
+War,en,palabra,war,0.5,0.10723963699548549,antes,poster,antes
+History,es,frase,una película histórica,0.1,0.06773436010459916,antes,poster,antes
+History,es,palabra,historia,0.0,0.07289957315893475,antes,poster,antes
+History,en,frase,a historical movie,0.1,0.07228482331786606,antes,poster,antes
+History,en,palabra,history,0.0,0.08306963699023734,antes,poster,antes
+Music,es,frase,una película sobre música,0.3,0.07767780140007736,antes,poster,antes
+Music,es,palabra,música,0.1,0.07261824191667449,antes,poster,antes
+Music,en,frase,a movie about music,0.3,0.07083219189441337,antes,poster,antes
+Music,en,palabra,music,0.2,0.07758401938242085,antes,poster,antes
+Animation,es,frase,una película animada,0.4,0.18887018445822676,antes,poster,antes
+Animation,es,palabra,animación,0.1,0.09086521997117931,antes,poster,antes
+Animation,en,frase,an animated movie,0.8,0.4601202943705961,antes,poster,antes
+Animation,en,palabra,animation,0.4,0.1906013349696031,antes,poster,antes
+Musical,es,frase,un musical,0.3,0.038311531327670796,antes,poster,antes
+Musical,es,palabra,musical,0.2,0.04352072286498047,antes,poster,antes
+Musical,en,frase,a musical,0.2,0.04927507752723452,antes,poster,antes
+Musical,en,palabra,musical,0.2,0.04352072286498047,antes,poster,antes
+Western,es,frase,una película del oeste,0.6,0.16771003659585637,antes,poster,antes
+Western,es,palabra,vaqueros,0.3,0.16375271249546025,antes,poster,antes
+Western,en,frase,a western movie,0.8,0.33675060413163205,antes,poster,antes
+Western,en,palabra,western,0.8,0.41568014269285986,antes,poster,antes
+Sport,es,frase,una película de deportes,0.7,0.18780829835219365,antes,poster,antes
+Sport,es,palabra,deportes,0.4,0.15278303709619526,antes,poster,antes
+Sport,en,frase,a sports movie,0.5,0.1401684524828966,antes,poster,antes
+Sport,en,palabra,sports,0.3,0.12480774794400958,antes,poster,antes
+Film-Noir,es,frase,una película de cine negro,0.0,0.013319417516955919,antes,poster,antes
+Film-Noir,es,palabra,cine negro,0.0,0.012594966077633062,antes,poster,antes
+Film-Noir,en,frase,a film noir,0.1,0.02263969362114614,antes,poster,antes
+Film-Noir,en,palabra,noir,0.0,0.014049564887214934,antes,poster,antes
+Drama,es,frase,una película dramática,0.8,0.6066172294992811,antes,sinopsis,antes
+Drama,es,palabra,drama,0.9,0.5968417520092707,antes,sinopsis,antes
+Drama,en,frase,a drama movie,1.0,0.594089376528405,antes,sinopsis,antes
+Drama,en,palabra,drama,0.9,0.5968417520092707,antes,sinopsis,antes
+Comedy,es,frase,una película de comedia,1.0,0.48495253018803075,antes,sinopsis,antes
+Comedy,es,palabra,comedia,1.0,0.4673485723601912,antes,sinopsis,antes
+Comedy,en,frase,a comedy movie,1.0,0.49152711537276755,antes,sinopsis,antes
+Comedy,en,palabra,comedy,1.0,0.5102724487012386,antes,sinopsis,antes
+Romance,es,frase,una película romántica,0.6,0.3410534366665876,antes,sinopsis,antes
+Romance,es,palabra,romance,0.7,0.3835553567078978,antes,sinopsis,antes
+Romance,en,frase,a romantic movie,0.8,0.31228808023188226,antes,sinopsis,antes
+Romance,en,palabra,romance,0.7,0.3835553567078978,antes,sinopsis,antes
+Thriller,es,frase,una película de suspenso,0.2,0.14674016222367164,antes,sinopsis,antes
+Thriller,es,palabra,suspenso,0.2,0.13860558324927288,antes,sinopsis,antes
+Thriller,en,frase,a thriller movie,0.8,0.18399585793668582,antes,sinopsis,antes
+Thriller,en,palabra,thriller,0.9,0.19270817849728278,antes,sinopsis,antes
+Crime,es,frase,una película de crimen,0.7,0.3828611143545007,antes,sinopsis,antes
+Crime,es,palabra,crimen,0.7,0.3430648600308402,antes,sinopsis,antes
+Crime,en,frase,a crime movie,0.9,0.4204585183645966,antes,sinopsis,antes
+Crime,en,palabra,crime,0.9,0.46488109349039736,antes,sinopsis,antes
+Action,es,frase,una película de acción,0.7,0.21693909057666086,antes,sinopsis,antes
+Action,es,palabra,acción,0.1,0.14376632416285923,antes,sinopsis,antes
+Action,en,frase,an action movie,0.5,0.20884990882466867,antes,sinopsis,antes
+Action,en,palabra,action,0.2,0.15960494104720002,antes,sinopsis,antes
+Adventure,es,frase,una película de aventuras,0.4,0.17515955429215355,antes,sinopsis,antes
+Adventure,es,palabra,aventura,0.6,0.17763350208011847,antes,sinopsis,antes
+Adventure,en,frase,an adventure movie,0.5,0.1941566149114744,antes,sinopsis,antes
+Adventure,en,palabra,adventure,0.4,0.22841246362607232,antes,sinopsis,antes
+Horror,es,frase,una película de terror,0.7,0.2557933060714229,antes,sinopsis,antes
+Horror,es,palabra,terror,0.3,0.20612199602423514,antes,sinopsis,antes
+Horror,en,frase,a horror movie,0.7,0.2722576832781433,antes,sinopsis,antes
+Horror,en,palabra,horror,0.8,0.32521202940669736,antes,sinopsis,antes
+Documentary,es,frase,un documental,1.0,0.478970458990371,antes,sinopsis,antes
+Documentary,es,palabra,documental,0.9,0.4877378494781146,antes,sinopsis,antes
+Documentary,en,frase,a documentary,1.0,0.4653056057389711,antes,sinopsis,antes
+Documentary,en,palabra,documentary,1.0,0.512169118446116,antes,sinopsis,antes
+Mystery,es,frase,una película de misterio,0.4,0.1307170099602317,antes,sinopsis,antes
+Mystery,es,palabra,misterio,0.3,0.14927230363644575,antes,sinopsis,antes
+Mystery,en,frase,a mystery movie,0.5,0.13098313120922705,antes,sinopsis,antes
+Mystery,en,palabra,mystery,0.3,0.18848547179556377,antes,sinopsis,antes
+Sci-Fi,es,frase,una película de ciencia ficción,0.5,0.2745869022825019,antes,sinopsis,antes
+Sci-Fi,es,palabra,ciencia ficción,0.5,0.24256994404269744,antes,sinopsis,antes
+Sci-Fi,en,frase,a science fiction movie,0.4,0.24465622025454856,antes,sinopsis,antes
+Sci-Fi,en,palabra,sci-fi,0.7,0.2582409525427804,antes,sinopsis,antes
+Fantasy,es,frase,una película de fantasía,0.2,0.11497856888954813,antes,sinopsis,antes
+Fantasy,es,palabra,fantasía,0.5,0.1316943447992597,antes,sinopsis,antes
+Fantasy,en,frase,a fantasy movie,0.5,0.10678058383190488,antes,sinopsis,antes
+Fantasy,en,palabra,fantasy,0.3,0.1345567412116536,antes,sinopsis,antes
+Family,es,frase,una película familiar,0.1,0.05380509421439646,antes,sinopsis,antes
+Family,es,palabra,familia,0.0,0.0543918500838563,antes,sinopsis,antes
+Family,en,frase,a family movie,0.3,0.06620771718530685,antes,sinopsis,antes
+Family,en,palabra,family,0.1,0.06348310970813931,antes,sinopsis,antes
+Biography,es,frase,una película biográfica,0.5,0.15706363446883462,antes,sinopsis,antes
+Biography,es,palabra,biografía,0.3,0.1356834203261366,antes,sinopsis,antes
+Biography,en,frase,a biographical movie,0.8,0.13517125356542192,antes,sinopsis,antes
+Biography,en,palabra,biography,0.6,0.18543953691142492,antes,sinopsis,antes
+War,es,frase,una película de guerra,0.6,0.16755815666192506,antes,sinopsis,antes
+War,es,palabra,guerra,0.5,0.19329043550477434,antes,sinopsis,antes
+War,en,frase,a war movie,0.5,0.1890526614818559,antes,sinopsis,antes
+War,en,palabra,war,0.5,0.209018427891279,antes,sinopsis,antes
+History,es,frase,una película histórica,0.4,0.11422295831174098,antes,sinopsis,antes
+History,es,palabra,historia,0.3,0.09243010407968713,antes,sinopsis,antes
+History,en,frase,a historical movie,0.3,0.1122982827471313,antes,sinopsis,antes
+History,en,palabra,history,0.2,0.12962417831447556,antes,sinopsis,antes
+Music,es,frase,una película sobre música,0.7,0.23925262136729625,antes,sinopsis,antes
+Music,es,palabra,música,0.8,0.3471113957802522,antes,sinopsis,antes
+Music,en,frase,a movie about music,0.7,0.22298903996873728,antes,sinopsis,antes
+Music,en,palabra,music,0.8,0.34825643875782014,antes,sinopsis,antes
+Animation,es,frase,una película animada,0.4,0.07438941399088095,antes,sinopsis,antes
+Animation,es,palabra,animación,0.2,0.05979915022462505,antes,sinopsis,antes
+Animation,en,frase,an animated movie,0.5,0.0913520145460452,antes,sinopsis,antes
+Animation,en,palabra,animation,0.4,0.0692664326437348,antes,sinopsis,antes
+Musical,es,frase,un musical,0.7,0.10429491022822361,antes,sinopsis,antes
+Musical,es,palabra,musical,0.7,0.10982773817413977,antes,sinopsis,antes
+Musical,en,frase,a musical,0.7,0.1004679646027317,antes,sinopsis,antes
+Musical,en,palabra,musical,0.7,0.10982773817413977,antes,sinopsis,antes
+Western,es,frase,una película del oeste,0.1,0.03793919800581567,antes,sinopsis,antes
+Western,es,palabra,vaqueros,0.1,0.03234873074964662,antes,sinopsis,antes
+Western,en,frase,a western movie,0.1,0.06209706415254082,antes,sinopsis,antes
+Western,en,palabra,western,0.3,0.08767172697074656,antes,sinopsis,antes
+Sport,es,frase,una película de deportes,0.7,0.2295158173005963,antes,sinopsis,antes
+Sport,es,palabra,deportes,0.4,0.19196088594047442,antes,sinopsis,antes
+Sport,en,frase,a sports movie,0.6,0.1911381691714507,antes,sinopsis,antes
+Sport,en,palabra,sports,0.6,0.38650403983633236,antes,sinopsis,antes
+Film-Noir,es,frase,una película de cine negro,0.0,0.01836360078581929,antes,sinopsis,antes
+Film-Noir,es,palabra,cine negro,0.0,0.016947558119853594,antes,sinopsis,antes
+Film-Noir,en,frase,a film noir,0.1,0.020004847974843178,antes,sinopsis,antes
+Film-Noir,en,palabra,noir,0.0,0.015138003035880369,antes,sinopsis,antes
+Drama,es,frase,una película dramática,0.9,0.6095028846216397,antes,ambos,antes
+Drama,es,palabra,drama,0.8,0.6030819124775004,antes,ambos,antes
+Drama,en,frase,a drama movie,0.9,0.6000739224936357,antes,ambos,antes
+Drama,en,palabra,drama,0.8,0.6030819124775004,antes,ambos,antes
+Comedy,es,frase,una película de comedia,1.0,0.5831760373434827,antes,ambos,antes
+Comedy,es,palabra,comedia,0.9,0.5699932092396209,antes,ambos,antes
+Comedy,en,frase,a comedy movie,1.0,0.5867112521352277,antes,ambos,antes
+Comedy,en,palabra,comedy,0.9,0.6087086314036138,antes,ambos,antes
+Romance,es,frase,una película romántica,0.7,0.4246881902378336,antes,ambos,antes
+Romance,es,palabra,romance,0.8,0.44166847364549927,antes,ambos,antes
+Romance,en,frase,a romantic movie,0.7,0.3803445638510563,antes,ambos,antes
+Romance,en,palabra,romance,0.8,0.44166847364549927,antes,ambos,antes
+Thriller,es,frase,una película de suspenso,0.3,0.16750984678621597,antes,ambos,antes
+Thriller,es,palabra,suspenso,0.1,0.1350476909907486,antes,ambos,antes
+Thriller,en,frase,a thriller movie,0.5,0.27499235018487755,antes,ambos,antes
+Thriller,en,palabra,thriller,0.6,0.26950927665365554,antes,ambos,antes
+Crime,es,frase,una película de crimen,0.7,0.45285087717315253,antes,ambos,antes
+Crime,es,palabra,crimen,0.6,0.3796209948949942,antes,ambos,antes
+Crime,en,frase,a crime movie,0.8,0.46255280072490124,antes,ambos,antes
+Crime,en,palabra,crime,0.8,0.4729611007949865,antes,ambos,antes
+Action,es,frase,una película de acción,0.8,0.29637343869926824,antes,ambos,antes
+Action,es,palabra,acción,0.3,0.20998642690514802,antes,ambos,antes
+Action,en,frase,an action movie,0.8,0.34864519404419053,antes,ambos,antes
+Action,en,palabra,action,0.4,0.23741038960898755,antes,ambos,antes
+Adventure,es,frase,una película de aventuras,0.7,0.2538029274214572,antes,ambos,antes
+Adventure,es,palabra,aventura,0.4,0.2500627471368163,antes,ambos,antes
+Adventure,en,frase,an adventure movie,0.7,0.2859402406350148,antes,ambos,antes
+Adventure,en,palabra,adventure,0.6,0.3092922755666162,antes,ambos,antes
+Horror,es,frase,una película de terror,0.8,0.43722576586528644,antes,ambos,antes
+Horror,es,palabra,terror,0.7,0.25904695822174445,antes,ambos,antes
+Horror,en,frase,a horror movie,1.0,0.5269209341624577,antes,ambos,antes
+Horror,en,palabra,horror,0.9,0.4800143986117428,antes,ambos,antes
+Documentary,es,frase,un documental,1.0,0.3667590761220338,antes,ambos,antes
+Documentary,es,palabra,documental,1.0,0.35997691010950084,antes,ambos,antes
+Documentary,en,frase,a documentary,1.0,0.4088324212853143,antes,ambos,antes
+Documentary,en,palabra,documentary,0.9,0.4215958706070314,antes,ambos,antes
+Mystery,es,frase,una película de misterio,0.2,0.15386558271770717,antes,ambos,antes
+Mystery,es,palabra,misterio,0.0,0.14074941456499918,antes,ambos,antes
+Mystery,en,frase,a mystery movie,0.3,0.14420765552393544,antes,ambos,antes
+Mystery,en,palabra,mystery,0.2,0.1694974741681155,antes,ambos,antes
+Sci-Fi,es,frase,una película de ciencia ficción,0.6,0.37168010904979265,antes,ambos,antes
+Sci-Fi,es,palabra,ciencia ficción,0.7,0.33308167831573904,antes,ambos,antes
+Sci-Fi,en,frase,a science fiction movie,0.7,0.3707106294498588,antes,ambos,antes
+Sci-Fi,en,palabra,sci-fi,0.7,0.33660677540473416,antes,ambos,antes
+Fantasy,es,frase,una película de fantasía,0.4,0.14538073455881664,antes,ambos,antes
+Fantasy,es,palabra,fantasía,0.2,0.12525680570942546,antes,ambos,antes
+Fantasy,en,frase,a fantasy movie,0.6,0.16494734473916814,antes,ambos,antes
+Fantasy,en,palabra,fantasy,0.4,0.16638792177956088,antes,ambos,antes
+Family,es,frase,una película familiar,0.2,0.0682169614219603,antes,ambos,antes
+Family,es,palabra,familia,0.0,0.06311601478328166,antes,ambos,antes
+Family,en,frase,a family movie,0.2,0.08735973769007549,antes,ambos,antes
+Family,en,palabra,family,0.0,0.07057282946214911,antes,ambos,antes
+Biography,es,frase,una película biográfica,0.7,0.1236493063575225,antes,ambos,antes
+Biography,es,palabra,biografía,0.4,0.12942278607983634,antes,ambos,antes
+Biography,en,frase,a biographical movie,0.6,0.1086838865411475,antes,ambos,antes
+Biography,en,palabra,biography,0.5,0.1657992772904094,antes,ambos,antes
+War,es,frase,una película de guerra,0.7,0.21284301499054742,antes,ambos,antes
+War,es,palabra,guerra,0.9,0.21336379648069373,antes,ambos,antes
+War,en,frase,a war movie,0.7,0.2362900441391615,antes,ambos,antes
+War,en,palabra,war,0.9,0.2301252663503326,antes,ambos,antes
+History,es,frase,una película histórica,0.2,0.10582040659982243,antes,ambos,antes
+History,es,palabra,historia,0.2,0.10177501680942008,antes,ambos,antes
+History,en,frase,a historical movie,0.4,0.11395267675272774,antes,ambos,antes
+History,en,palabra,history,0.3,0.14770261727537126,antes,ambos,antes
+Music,es,frase,una película sobre música,0.8,0.23505316637615875,antes,ambos,antes
+Music,es,palabra,música,0.5,0.2746129940323129,antes,ambos,antes
+Music,en,frase,a movie about music,0.7,0.21731807571110012,antes,ambos,antes
+Music,en,palabra,music,0.6,0.301480093511392,antes,ambos,antes
+Animation,es,frase,una película animada,0.5,0.19014730215649434,antes,ambos,antes
+Animation,es,palabra,animación,0.3,0.0949745022047534,antes,ambos,antes
+Animation,en,frase,an animated movie,0.6,0.35153597630905625,antes,ambos,antes
+Animation,en,palabra,animation,0.3,0.15973659366860846,antes,ambos,antes
+Musical,es,frase,un musical,0.3,0.0769439343310229,antes,ambos,antes
+Musical,es,palabra,musical,0.4,0.08488184641855051,antes,ambos,antes
+Musical,en,frase,a musical,0.4,0.09167300224048537,antes,ambos,antes
+Musical,en,palabra,musical,0.4,0.08488184641855051,antes,ambos,antes
+Western,es,frase,una película del oeste,0.4,0.13970272433280903,antes,ambos,antes
+Western,es,palabra,vaqueros,0.3,0.14689932300276318,antes,ambos,antes
+Western,en,frase,a western movie,0.5,0.2699445327498348,antes,ambos,antes
+Western,en,palabra,western,0.6,0.35393776944905087,antes,ambos,antes
+Sport,es,frase,una película de deportes,0.9,0.3993249844128679,antes,ambos,antes
+Sport,es,palabra,deportes,0.6,0.3037897244814687,antes,ambos,antes
+Sport,en,frase,a sports movie,0.8,0.3214371615038793,antes,ambos,antes
+Sport,en,palabra,sports,0.9,0.4271018486989829,antes,ambos,antes
+Film-Noir,es,frase,una película de cine negro,0.0,0.015436381890353328,antes,ambos,antes
+Film-Noir,es,palabra,cine negro,0.0,0.013824386584383041,antes,ambos,antes
+Film-Noir,en,frase,a film noir,0.0,0.019904848488662825,antes,ambos,antes
+Film-Noir,en,palabra,noir,0.0,0.013269054895443076,antes,ambos,antes
+Drama,es,frase,una película dramática,0.7,0.7199408560011826,después_s0,poster,después
+Drama,es,palabra,drama,0.9,0.7791722844704508,después_s0,poster,después
+Drama,en,frase,a drama movie,0.8,0.7788593643126753,después_s0,poster,después
+Drama,en,palabra,drama,0.9,0.7791722844704508,después_s0,poster,después
+Comedy,es,frase,una película de comedia,1.0,0.7543337015386578,después_s0,poster,después
+Comedy,es,palabra,comedia,1.0,0.749045608619362,después_s0,poster,después
+Comedy,en,frase,a comedy movie,1.0,0.7520884381187308,después_s0,poster,después
+Comedy,en,palabra,comedy,1.0,0.7549269273856434,después_s0,poster,después
+Romance,es,frase,una película romántica,0.9,0.49887754044145605,después_s0,poster,después
+Romance,es,palabra,romance,0.8,0.49193391496169686,después_s0,poster,después
+Romance,en,frase,a romantic movie,0.9,0.4883382018714204,después_s0,poster,después
+Romance,en,palabra,romance,0.8,0.49193391496169686,después_s0,poster,después
+Thriller,es,frase,una película de suspenso,0.3,0.2696977087553898,después_s0,poster,después
+Thriller,es,palabra,suspenso,0.4,0.27953847025101397,después_s0,poster,después
+Thriller,en,frase,a thriller movie,0.3,0.33036047205629093,después_s0,poster,después
+Thriller,en,palabra,thriller,0.5,0.33236076829999206,después_s0,poster,después
+Crime,es,frase,una película de crimen,0.9,0.4631964664228538,después_s0,poster,después
+Crime,es,palabra,crimen,0.8,0.43044697895432493,después_s0,poster,después
+Crime,en,frase,a crime movie,0.9,0.4293711439295252,después_s0,poster,después
+Crime,en,palabra,crime,0.8,0.4379593972074779,después_s0,poster,después
+Action,es,frase,una película de acción,1.0,0.5824189263595656,después_s0,poster,después
+Action,es,palabra,acción,1.0,0.5879017446998145,después_s0,poster,después
+Action,en,frase,an action movie,1.0,0.5905474157732921,después_s0,poster,después
+Action,en,palabra,action,1.0,0.5943110395090654,después_s0,poster,después
+Adventure,es,frase,una película de aventuras,1.0,0.47202349184479186,después_s0,poster,después
+Adventure,es,palabra,aventura,0.9,0.4563888518722986,después_s0,poster,después
+Adventure,en,frase,an adventure movie,1.0,0.47756976577149945,después_s0,poster,después
+Adventure,en,palabra,adventure,1.0,0.4783249743356449,después_s0,poster,después
+Horror,es,frase,una película de terror,1.0,0.6363254905828046,después_s0,poster,después
+Horror,es,palabra,terror,1.0,0.5595927654849451,después_s0,poster,después
+Horror,en,frase,a horror movie,1.0,0.653003804883067,después_s0,poster,después
+Horror,en,palabra,horror,1.0,0.6466810894327151,después_s0,poster,después
+Documentary,es,frase,un documental,0.5,0.35369007437992184,después_s0,poster,después
+Documentary,es,palabra,documental,0.7,0.3341193907011267,después_s0,poster,después
+Documentary,en,frase,a documentary,0.6,0.3881944904303473,después_s0,poster,después
+Documentary,en,palabra,documentary,0.7,0.38851868668451106,después_s0,poster,después
+Mystery,es,frase,una película de misterio,0.8,0.23691313855416193,después_s0,poster,después
+Mystery,es,palabra,misterio,0.7,0.22882695478269222,después_s0,poster,después
+Mystery,en,frase,a mystery movie,0.8,0.21155569558360215,después_s0,poster,después
+Mystery,en,palabra,mystery,0.7,0.22797395441409457,después_s0,poster,después
+Sci-Fi,es,frase,una película de ciencia ficción,0.7,0.3719615493823872,después_s0,poster,después
+Sci-Fi,es,palabra,ciencia ficción,0.8,0.347435584701901,después_s0,poster,después
+Sci-Fi,en,frase,a science fiction movie,0.7,0.3760037609092561,después_s0,poster,después
+Sci-Fi,en,palabra,sci-fi,0.8,0.3251879390710914,después_s0,poster,después
+Fantasy,es,frase,una película de fantasía,0.5,0.18610995160880003,después_s0,poster,después
+Fantasy,es,palabra,fantasía,0.4,0.1557900427883494,después_s0,poster,después
+Fantasy,en,frase,a fantasy movie,0.7,0.20807837835602747,después_s0,poster,después
+Fantasy,en,palabra,fantasy,0.7,0.19452345087255052,después_s0,poster,después
+Family,es,frase,una película familiar,0.7,0.2973927336693575,después_s0,poster,después
+Family,es,palabra,familia,0.2,0.24260785908983487,después_s0,poster,después
+Family,en,frase,a family movie,0.4,0.2951924272302322,después_s0,poster,después
+Family,en,palabra,family,0.2,0.24561282474166207,después_s0,poster,después
+Biography,es,frase,una película biográfica,0.4,0.1358499251672936,después_s0,poster,después
+Biography,es,palabra,biografía,0.3,0.16124099822010973,después_s0,poster,después
+Biography,en,frase,a biographical movie,0.4,0.14009279730192717,después_s0,poster,después
+Biography,en,palabra,biography,0.5,0.15604282580427303,después_s0,poster,después
+War,es,frase,una película de guerra,0.6,0.2076952880238727,después_s0,poster,después
+War,es,palabra,guerra,0.4,0.16330761513521727,después_s0,poster,después
+War,en,frase,a war movie,0.8,0.22357580609905015,después_s0,poster,después
+War,en,palabra,war,0.5,0.16475517416560184,después_s0,poster,después
+History,es,frase,una película histórica,0.4,0.16105237882216894,después_s0,poster,después
+History,es,palabra,historia,0.1,0.15116160766962825,después_s0,poster,después
+History,en,frase,a historical movie,0.6,0.1700659262931847,después_s0,poster,después
+History,en,palabra,history,0.1,0.15594869746874115,después_s0,poster,después
+Music,es,frase,una película sobre música,0.5,0.21256404052021194,después_s0,poster,después
+Music,es,palabra,música,0.3,0.17551487669698024,después_s0,poster,después
+Music,en,frase,a movie about music,0.6,0.18309162487988828,después_s0,poster,después
+Music,en,palabra,music,0.4,0.18015568708371016,después_s0,poster,después
+Animation,es,frase,una película animada,0.9,0.6365832376688723,después_s0,poster,después
+Animation,es,palabra,animación,0.7,0.4213441521747892,después_s0,poster,después
+Animation,en,frase,an animated movie,1.0,0.7533076375521329,después_s0,poster,después
+Animation,en,palabra,animation,1.0,0.7276135660465841,después_s0,poster,después
+Musical,es,frase,un musical,0.2,0.09007947100712126,después_s0,poster,después
+Musical,es,palabra,musical,0.2,0.09942236007830194,después_s0,poster,después
+Musical,en,frase,a musical,0.3,0.10809412890472028,después_s0,poster,después
+Musical,en,palabra,musical,0.2,0.09942236007830194,después_s0,poster,después
+Western,es,frase,una película del oeste,0.8,0.44564335145190687,después_s0,poster,después
+Western,es,palabra,vaqueros,0.9,0.48332213315964656,después_s0,poster,después
+Western,en,frase,a western movie,0.8,0.5283478394927049,después_s0,poster,después
+Western,en,palabra,western,0.9,0.5450102372124913,después_s0,poster,después
+Sport,es,frase,una película de deportes,1.0,0.37298450595377564,después_s0,poster,después
+Sport,es,palabra,deportes,0.9,0.33260138821727725,después_s0,poster,después
+Sport,en,frase,a sports movie,0.9,0.36844881811537916,después_s0,poster,después
+Sport,en,palabra,sports,0.9,0.31966533683468273,después_s0,poster,después
+Film-Noir,es,frase,una película de cine negro,0.3,0.09602296082151365,después_s0,poster,después
+Film-Noir,es,palabra,cine negro,0.4,0.10190814039598546,después_s0,poster,después
+Film-Noir,en,frase,a film noir,0.3,0.09391450677633376,después_s0,poster,después
+Film-Noir,en,palabra,noir,0.3,0.06010541130120056,después_s0,poster,después
+Drama,es,frase,una película dramática,0.9,0.7908939087286931,después_s0,sinopsis,después
+Drama,es,palabra,drama,1.0,0.8144171969882241,después_s0,sinopsis,después
+Drama,en,frase,a drama movie,1.0,0.8230042981202029,después_s0,sinopsis,después
+Drama,en,palabra,drama,1.0,0.8144171969882241,después_s0,sinopsis,después
+Comedy,es,frase,una película de comedia,1.0,0.7192445533479985,después_s0,sinopsis,después
+Comedy,es,palabra,comedia,1.0,0.6787665552769394,después_s0,sinopsis,después
+Comedy,en,frase,a comedy movie,1.0,0.7092055843026349,después_s0,sinopsis,después
+Comedy,en,palabra,comedy,1.0,0.6987369378105014,después_s0,sinopsis,después
+Romance,es,frase,una película romántica,0.9,0.5559627948303287,después_s0,sinopsis,después
+Romance,es,palabra,romance,1.0,0.551774790343291,después_s0,sinopsis,después
+Romance,en,frase,a romantic movie,1.0,0.5503760077189741,después_s0,sinopsis,después
+Romance,en,palabra,romance,1.0,0.551774790343291,después_s0,sinopsis,después
+Thriller,es,frase,una película de suspenso,0.7,0.3111283804638097,después_s0,sinopsis,después
+Thriller,es,palabra,suspenso,0.3,0.26930526766979435,después_s0,sinopsis,después
+Thriller,en,frase,a thriller movie,0.7,0.3379038619734217,después_s0,sinopsis,después
+Thriller,en,palabra,thriller,0.7,0.32978692265107235,después_s0,sinopsis,después
+Crime,es,frase,una película de crimen,0.8,0.6458038227743248,después_s0,sinopsis,después
+Crime,es,palabra,crimen,1.0,0.6154319116571718,después_s0,sinopsis,después
+Crime,en,frase,a crime movie,0.9,0.6757025000449153,después_s0,sinopsis,después
+Crime,en,palabra,crime,1.0,0.660612255449275,después_s0,sinopsis,después
+Action,es,frase,una película de acción,0.9,0.5991692797486216,después_s0,sinopsis,después
+Action,es,palabra,acción,0.8,0.5572098722791387,después_s0,sinopsis,después
+Action,en,frase,an action movie,1.0,0.5892804570106303,después_s0,sinopsis,después
+Action,en,palabra,action,0.8,0.5760213573495068,después_s0,sinopsis,después
+Adventure,es,frase,una película de aventuras,1.0,0.5571099024015903,después_s0,sinopsis,después
+Adventure,es,palabra,aventura,0.7,0.5112327017127267,después_s0,sinopsis,después
+Adventure,en,frase,an adventure movie,0.9,0.5590331443253078,después_s0,sinopsis,después
+Adventure,en,palabra,adventure,0.9,0.5376251994842155,después_s0,sinopsis,después
+Horror,es,frase,una película de terror,1.0,0.6427324269539307,después_s0,sinopsis,después
+Horror,es,palabra,terror,1.0,0.5054914057420485,después_s0,sinopsis,después
+Horror,en,frase,a horror movie,0.9,0.6591816887152638,después_s0,sinopsis,después
+Horror,en,palabra,horror,1.0,0.6476603346762868,después_s0,sinopsis,después
+Documentary,es,frase,un documental,1.0,0.8285600976700225,después_s0,sinopsis,después
+Documentary,es,palabra,documental,1.0,0.8294607334717681,después_s0,sinopsis,después
+Documentary,en,frase,a documentary,1.0,0.8263248964369508,después_s0,sinopsis,después
+Documentary,en,palabra,documentary,1.0,0.8315390736385524,después_s0,sinopsis,después
+Mystery,es,frase,una película de misterio,0.6,0.342737159598088,después_s0,sinopsis,después
+Mystery,es,palabra,misterio,0.5,0.3432066230441171,después_s0,sinopsis,después
+Mystery,en,frase,a mystery movie,0.6,0.34912325564468955,después_s0,sinopsis,después
+Mystery,en,palabra,mystery,0.4,0.3700132407507727,después_s0,sinopsis,después
+Sci-Fi,es,frase,una película de ciencia ficción,0.7,0.5238780850730822,después_s0,sinopsis,después
+Sci-Fi,es,palabra,ciencia ficción,0.7,0.5051230154456955,después_s0,sinopsis,después
+Sci-Fi,en,frase,a science fiction movie,0.9,0.5253839698602428,después_s0,sinopsis,después
+Sci-Fi,en,palabra,sci-fi,0.7,0.4927424078255728,después_s0,sinopsis,después
+Fantasy,es,frase,una película de fantasía,0.4,0.23933539970215922,después_s0,sinopsis,después
+Fantasy,es,palabra,fantasía,0.5,0.22285633749458134,después_s0,sinopsis,después
+Fantasy,en,frase,a fantasy movie,0.6,0.2626549109336554,después_s0,sinopsis,después
+Fantasy,en,palabra,fantasy,0.5,0.23443286651001094,después_s0,sinopsis,después
+Family,es,frase,una película familiar,0.4,0.23581290063681806,después_s0,sinopsis,después
+Family,es,palabra,familia,0.4,0.17108100942684595,después_s0,sinopsis,después
+Family,en,frase,a family movie,0.5,0.2690925065631809,después_s0,sinopsis,después
+Family,en,palabra,family,0.2,0.20375479453094067,después_s0,sinopsis,después
+Biography,es,frase,una película biográfica,1.0,0.37086722778380604,después_s0,sinopsis,después
+Biography,es,palabra,biografía,0.7,0.35921505845870616,después_s0,sinopsis,después
+Biography,en,frase,a biographical movie,0.9,0.3496096319191961,después_s0,sinopsis,después
+Biography,en,palabra,biography,0.9,0.4011313455047858,después_s0,sinopsis,después
+War,es,frase,una película de guerra,0.6,0.4384135079337989,después_s0,sinopsis,después
+War,es,palabra,guerra,0.6,0.3873987219638991,después_s0,sinopsis,después
+War,en,frase,a war movie,0.5,0.4394436982104808,después_s0,sinopsis,después
+War,en,palabra,war,0.9,0.37990062175721007,después_s0,sinopsis,después
+History,es,frase,una película histórica,0.4,0.29813723485806454,después_s0,sinopsis,después
+History,es,palabra,historia,0.5,0.2630750985510937,después_s0,sinopsis,después
+History,en,frase,a historical movie,0.7,0.32083138686074014,después_s0,sinopsis,después
+History,en,palabra,history,0.7,0.2925199311622593,después_s0,sinopsis,después
+Music,es,frase,una película sobre música,1.0,0.5394400073908231,después_s0,sinopsis,después
+Music,es,palabra,música,0.8,0.5205862018934685,después_s0,sinopsis,después
+Music,en,frase,a movie about music,0.9,0.5423437114474622,después_s0,sinopsis,después
+Music,en,palabra,music,0.7,0.5400432098989094,después_s0,sinopsis,después
+Animation,es,frase,una película animada,0.7,0.32142373556700155,después_s0,sinopsis,después
+Animation,es,palabra,animación,0.5,0.31219519887738006,después_s0,sinopsis,después
+Animation,en,frase,an animated movie,0.6,0.3551759495025603,después_s0,sinopsis,después
+Animation,en,palabra,animation,0.6,0.2843312024885343,después_s0,sinopsis,después
+Musical,es,frase,un musical,0.6,0.19215539555045644,después_s0,sinopsis,después
+Musical,es,palabra,musical,0.5,0.17441756778854087,después_s0,sinopsis,después
+Musical,en,frase,a musical,0.5,0.20194168464395248,después_s0,sinopsis,después
+Musical,en,palabra,musical,0.5,0.17441756778854087,después_s0,sinopsis,después
+Western,es,frase,una película del oeste,0.7,0.23990789593406783,después_s0,sinopsis,después
+Western,es,palabra,vaqueros,0.7,0.22588155270847407,después_s0,sinopsis,después
+Western,en,frase,a western movie,0.6,0.41070347902255294,después_s0,sinopsis,después
+Western,en,palabra,western,0.5,0.3454115480407022,después_s0,sinopsis,después
+Sport,es,frase,una película de deportes,1.0,0.630073212962483,después_s0,sinopsis,después
+Sport,es,palabra,deportes,1.0,0.44502547616105487,después_s0,sinopsis,después
+Sport,en,frase,a sports movie,1.0,0.6086240894884214,después_s0,sinopsis,después
+Sport,en,palabra,sports,0.9,0.5770925255479157,después_s0,sinopsis,después
+Film-Noir,es,frase,una película de cine negro,0.1,0.06182498494686629,después_s0,sinopsis,después
+Film-Noir,es,palabra,cine negro,0.1,0.05735991349342505,después_s0,sinopsis,después
+Film-Noir,en,frase,a film noir,0.2,0.06062214399710897,después_s0,sinopsis,después
+Film-Noir,en,palabra,noir,0.0,0.03469281488780628,después_s0,sinopsis,después
+Drama,es,frase,una película dramática,1.0,0.8042685403364627,después_s0,ambos,después
+Drama,es,palabra,drama,1.0,0.8447425556249992,después_s0,ambos,después
+Drama,en,frase,a drama movie,1.0,0.8412018719825672,después_s0,ambos,después
+Drama,en,palabra,drama,1.0,0.8447425556249992,después_s0,ambos,después
+Comedy,es,frase,una película de comedia,1.0,0.8130739405195185,después_s0,ambos,después
+Comedy,es,palabra,comedia,1.0,0.7969973340627051,después_s0,ambos,después
+Comedy,en,frase,a comedy movie,1.0,0.8084051736269584,después_s0,ambos,después
+Comedy,en,palabra,comedy,1.0,0.8071623239988881,después_s0,ambos,después
+Romance,es,frase,una película romántica,1.0,0.6104156625066118,después_s0,ambos,después
+Romance,es,palabra,romance,1.0,0.6087307846744954,después_s0,ambos,después
+Romance,en,frase,a romantic movie,0.9,0.5963282906860143,después_s0,ambos,después
+Romance,en,palabra,romance,1.0,0.6087307846744954,después_s0,ambos,después
+Thriller,es,frase,una película de suspenso,0.3,0.35657683478076135,después_s0,ambos,después
+Thriller,es,palabra,suspenso,0.4,0.33922833525135615,después_s0,ambos,después
+Thriller,en,frase,a thriller movie,0.6,0.39465591615526835,después_s0,ambos,después
+Thriller,en,palabra,thriller,0.6,0.3950441147652672,después_s0,ambos,después
+Crime,es,frase,una película de crimen,0.9,0.6617779600058351,después_s0,ambos,después
+Crime,es,palabra,crimen,0.9,0.6293843227813993,después_s0,ambos,después
+Crime,en,frase,a crime movie,1.0,0.6715369944125762,después_s0,ambos,después
+Crime,en,palabra,crime,1.0,0.6615126619347415,después_s0,ambos,después
+Action,es,frase,una película de acción,1.0,0.696977488131641,después_s0,ambos,después
+Action,es,palabra,acción,0.9,0.6854133058180003,después_s0,ambos,después
+Action,en,frase,an action movie,1.0,0.6886962795746396,después_s0,ambos,después
+Action,en,palabra,action,1.0,0.6958000837940046,después_s0,ambos,después
+Adventure,es,frase,una película de aventuras,1.0,0.6119057451059046,después_s0,ambos,después
+Adventure,es,palabra,aventura,1.0,0.5770355826613858,después_s0,ambos,después
+Adventure,en,frase,an adventure movie,1.0,0.6061938438158744,después_s0,ambos,después
+Adventure,en,palabra,adventure,1.0,0.5978091448002046,después_s0,ambos,después
+Horror,es,frase,una película de terror,1.0,0.7571492276320929,después_s0,ambos,después
+Horror,es,palabra,terror,1.0,0.6548794081330902,después_s0,ambos,después
+Horror,en,frase,a horror movie,0.9,0.7773005247941575,después_s0,ambos,después
+Horror,en,palabra,horror,1.0,0.7683403507849516,después_s0,ambos,después
+Documentary,es,frase,un documental,1.0,0.8271168122905291,después_s0,ambos,después
+Documentary,es,palabra,documental,1.0,0.8138913599190705,después_s0,ambos,después
+Documentary,en,frase,a documentary,1.0,0.834978598002007,después_s0,ambos,después
+Documentary,en,palabra,documentary,1.0,0.836449077982911,después_s0,ambos,después
+Mystery,es,frase,una película de misterio,0.7,0.3638835801073475,después_s0,ambos,después
+Mystery,es,palabra,misterio,0.6,0.3563089990468926,después_s0,ambos,después
+Mystery,en,frase,a mystery movie,0.8,0.36274061764647975,después_s0,ambos,después
+Mystery,en,palabra,mystery,0.7,0.3837711896194852,después_s0,ambos,después
+Sci-Fi,es,frase,una película de ciencia ficción,0.8,0.5494584312225534,después_s0,ambos,después
+Sci-Fi,es,palabra,ciencia ficción,0.7,0.526262120658934,después_s0,ambos,después
+Sci-Fi,en,frase,a science fiction movie,0.9,0.5484729724799108,después_s0,ambos,después
+Sci-Fi,en,palabra,sci-fi,0.9,0.504653517303867,después_s0,ambos,después
+Fantasy,es,frase,una película de fantasía,0.5,0.27352646771223466,después_s0,ambos,después
+Fantasy,es,palabra,fantasía,0.5,0.2313248992310124,después_s0,ambos,después
+Fantasy,en,frase,a fantasy movie,0.5,0.2886181624584985,después_s0,ambos,después
+Fantasy,en,palabra,fantasy,0.7,0.27503365860039636,después_s0,ambos,después
+Family,es,frase,una película familiar,0.7,0.3580817838842444,después_s0,ambos,después
+Family,es,palabra,familia,0.3,0.29835441364588317,después_s0,ambos,después
+Family,en,frase,a family movie,0.5,0.3578041184444473,después_s0,ambos,después
+Family,en,palabra,family,0.2,0.31331323521987114,después_s0,ambos,después
+Biography,es,frase,una película biográfica,0.5,0.31883257483852306,después_s0,ambos,después
+Biography,es,palabra,biografía,0.8,0.3474111370106776,después_s0,ambos,después
+Biography,en,frase,a biographical movie,0.7,0.3314946830511524,después_s0,ambos,después
+Biography,en,palabra,biography,0.8,0.368459527042758,después_s0,ambos,después
+War,es,frase,una película de guerra,0.8,0.4095662069041457,después_s0,ambos,después
+War,es,palabra,guerra,0.7,0.3498949768762101,después_s0,ambos,después
+War,en,frase,a war movie,0.8,0.43475612848446504,después_s0,ambos,después
+War,en,palabra,war,0.7,0.35431606304718943,después_s0,ambos,después
+History,es,frase,una película histórica,0.7,0.29936219444967826,después_s0,ambos,después
+History,es,palabra,historia,0.6,0.27718632475613475,después_s0,ambos,después
+History,en,frase,a historical movie,0.6,0.31624971215646125,después_s0,ambos,después
+History,en,palabra,history,0.5,0.2972099792073945,después_s0,ambos,después
+Music,es,frase,una película sobre música,0.8,0.5194603583191516,después_s0,ambos,después
+Music,es,palabra,música,0.7,0.495000409723741,después_s0,ambos,después
+Music,en,frase,a movie about music,0.8,0.5032569430271874,después_s0,ambos,después
+Music,en,palabra,music,0.8,0.5274018114044697,después_s0,ambos,después
+Animation,es,frase,una película animada,0.9,0.6446018275823618,después_s0,ambos,después
+Animation,es,palabra,animación,1.0,0.5804790539156831,después_s0,ambos,después
+Animation,en,frase,an animated movie,1.0,0.7299300047851899,después_s0,ambos,después
+Animation,en,palabra,animation,1.0,0.7136780737530746,después_s0,ambos,después
+Musical,es,frase,un musical,0.3,0.19402403860633397,después_s0,ambos,después
+Musical,es,palabra,musical,0.1,0.190720432608681,después_s0,ambos,después
+Musical,en,frase,a musical,0.3,0.22351410321643683,después_s0,ambos,después
+Musical,en,palabra,musical,0.1,0.190720432608681,después_s0,ambos,después
+Western,es,frase,una película del oeste,0.7,0.5160616663251804,después_s0,ambos,después
+Western,es,palabra,vaqueros,0.9,0.5400132858878736,después_s0,ambos,después
+Western,en,frase,a western movie,0.7,0.5976153898331947,después_s0,ambos,después
+Western,en,palabra,western,0.6,0.5828214947282983,después_s0,ambos,después
+Sport,es,frase,una película de deportes,1.0,0.6361172379005512,después_s0,ambos,después
+Sport,es,palabra,deportes,1.0,0.5316317322271747,después_s0,ambos,después
+Sport,en,frase,a sports movie,1.0,0.6237659236600047,después_s0,ambos,después
+Sport,en,palabra,sports,0.9,0.578415904990789,después_s0,ambos,después
+Film-Noir,es,frase,una película de cine negro,0.3,0.1522467395730801,después_s0,ambos,después
+Film-Noir,es,palabra,cine negro,0.2,0.14202927654606695,después_s0,ambos,después
+Film-Noir,en,frase,a film noir,0.2,0.10631390902959587,después_s0,ambos,después
+Film-Noir,en,palabra,noir,0.1,0.05383848509635835,después_s0,ambos,después
+Drama,es,frase,una película dramática,0.8,0.710402990745999,después_s1,poster,después
+Drama,es,palabra,drama,0.7,0.773600220055197,después_s1,poster,después
+Drama,en,frase,a drama movie,1.0,0.7851082553111397,después_s1,poster,después
+Drama,en,palabra,drama,0.7,0.773600220055197,después_s1,poster,después
+Comedy,es,frase,una película de comedia,1.0,0.7375973405307239,después_s1,poster,después
+Comedy,es,palabra,comedia,1.0,0.7385490183688905,después_s1,poster,después
+Comedy,en,frase,a comedy movie,1.0,0.7377609068049122,después_s1,poster,después
+Comedy,en,palabra,comedy,1.0,0.7456200883007523,después_s1,poster,después
+Romance,es,frase,una película romántica,0.9,0.4987348388690462,después_s1,poster,después
+Romance,es,palabra,romance,0.8,0.4938613958405166,después_s1,poster,después
+Romance,en,frase,a romantic movie,0.8,0.4896841299117913,después_s1,poster,después
+Romance,en,palabra,romance,0.8,0.4938613958405166,después_s1,poster,después
+Thriller,es,frase,una película de suspenso,0.2,0.286641759040568,después_s1,poster,después
+Thriller,es,palabra,suspenso,0.3,0.30003238708104557,después_s1,poster,después
+Thriller,en,frase,a thriller movie,0.3,0.32289367749781656,después_s1,poster,después
+Thriller,en,palabra,thriller,0.6,0.3274007966591902,después_s1,poster,después
+Crime,es,frase,una película de crimen,0.8,0.46948029923363943,después_s1,poster,después
+Crime,es,palabra,crimen,0.7,0.4460695372918464,después_s1,poster,después
+Crime,en,frase,a crime movie,0.9,0.4523614086627505,después_s1,poster,después
+Crime,en,palabra,crime,0.8,0.4531486092423208,después_s1,poster,después
+Action,es,frase,una película de acción,1.0,0.579165360831306,después_s1,poster,después
+Action,es,palabra,acción,0.9,0.5884860148133833,después_s1,poster,después
+Action,en,frase,an action movie,1.0,0.5859754794945587,después_s1,poster,después
+Action,en,palabra,action,0.9,0.5953778268657095,después_s1,poster,después
+Adventure,es,frase,una película de aventuras,1.0,0.4797008812728015,después_s1,poster,después
+Adventure,es,palabra,aventura,0.9,0.4471610770580023,después_s1,poster,después
+Adventure,en,frase,an adventure movie,1.0,0.4837993701211028,después_s1,poster,después
+Adventure,en,palabra,adventure,1.0,0.476529612767633,después_s1,poster,después
+Horror,es,frase,una película de terror,1.0,0.6370601475853587,después_s1,poster,después
+Horror,es,palabra,terror,1.0,0.5551052933636069,después_s1,poster,después
+Horror,en,frase,a horror movie,1.0,0.662075558872708,después_s1,poster,después
+Horror,en,palabra,horror,1.0,0.6499429743398883,después_s1,poster,después
+Documentary,es,frase,un documental,0.7,0.3567557305801666,después_s1,poster,después
+Documentary,es,palabra,documental,0.7,0.34049633439812865,después_s1,poster,después
+Documentary,en,frase,a documentary,0.6,0.3881869305009533,después_s1,poster,después
+Documentary,en,palabra,documentary,0.7,0.39371922107769747,después_s1,poster,después
+Mystery,es,frase,una película de misterio,0.5,0.23478538576268698,después_s1,poster,después
+Mystery,es,palabra,misterio,0.7,0.23160834427293947,después_s1,poster,después
+Mystery,en,frase,a mystery movie,0.7,0.21446479289596024,después_s1,poster,después
+Mystery,en,palabra,mystery,0.7,0.2326458313010124,después_s1,poster,después
+Sci-Fi,es,frase,una película de ciencia ficción,0.8,0.3607736691580339,después_s1,poster,después
+Sci-Fi,es,palabra,ciencia ficción,0.7,0.33554485630919373,después_s1,poster,después
+Sci-Fi,en,frase,a science fiction movie,0.8,0.36915627962569236,después_s1,poster,después
+Sci-Fi,en,palabra,sci-fi,0.7,0.326729819746072,después_s1,poster,después
+Fantasy,es,frase,una película de fantasía,0.5,0.19472509296472684,después_s1,poster,después
+Fantasy,es,palabra,fantasía,0.5,0.16392221707902663,después_s1,poster,después
+Fantasy,en,frase,a fantasy movie,0.7,0.2122264604790733,después_s1,poster,después
+Fantasy,en,palabra,fantasy,0.8,0.2027831343150003,después_s1,poster,después
+Family,es,frase,una película familiar,0.6,0.28389420612146005,después_s1,poster,después
+Family,es,palabra,familia,0.4,0.24442999359147832,después_s1,poster,después
+Family,en,frase,a family movie,0.5,0.2907336705223139,después_s1,poster,después
+Family,en,palabra,family,0.4,0.24756722894968697,después_s1,poster,después
+Biography,es,frase,una película biográfica,0.2,0.1338514590885922,después_s1,poster,después
+Biography,es,palabra,biografía,0.3,0.15826518803264672,después_s1,poster,después
+Biography,en,frase,a biographical movie,0.5,0.14335008130500054,después_s1,poster,después
+Biography,en,palabra,biography,0.4,0.1530407712785652,después_s1,poster,después
+War,es,frase,una película de guerra,0.7,0.2041525620458875,después_s1,poster,después
+War,es,palabra,guerra,0.5,0.16196131640365424,después_s1,poster,después
+War,en,frase,a war movie,0.8,0.2254950972622317,después_s1,poster,después
+War,en,palabra,war,0.5,0.16444408042440745,después_s1,poster,después
+History,es,frase,una película histórica,0.4,0.1596229816595402,después_s1,poster,después
+History,es,palabra,historia,0.3,0.1546672537722286,después_s1,poster,después
+History,en,frase,a historical movie,0.4,0.1706850656780508,después_s1,poster,después
+History,en,palabra,history,0.3,0.16244103427857554,después_s1,poster,después
+Music,es,frase,una película sobre música,0.5,0.1995687032721281,después_s1,poster,después
+Music,es,palabra,música,0.3,0.17741432547889957,después_s1,poster,después
+Music,en,frase,a movie about music,0.5,0.174897451264396,después_s1,poster,después
+Music,en,palabra,music,0.4,0.1801220183390041,después_s1,poster,después
+Animation,es,frase,una película animada,1.0,0.6446889457775855,después_s1,poster,después
+Animation,es,palabra,animación,0.9,0.47379584246383666,después_s1,poster,después
+Animation,en,frase,an animated movie,1.0,0.7541877727446591,después_s1,poster,después
+Animation,en,palabra,animation,1.0,0.7339318870869518,después_s1,poster,después
+Musical,es,frase,un musical,0.1,0.0856151102544782,después_s1,poster,después
+Musical,es,palabra,musical,0.2,0.09452383198988683,después_s1,poster,después
+Musical,en,frase,a musical,0.2,0.10462220670587653,después_s1,poster,después
+Musical,en,palabra,musical,0.2,0.09452383198988683,después_s1,poster,después
+Western,es,frase,una película del oeste,0.8,0.43884886818936075,después_s1,poster,después
+Western,es,palabra,vaqueros,0.9,0.4515675978733997,después_s1,poster,después
+Western,en,frase,a western movie,0.8,0.5190706431618518,después_s1,poster,después
+Western,en,palabra,western,0.9,0.5323123942668235,después_s1,poster,después
+Sport,es,frase,una película de deportes,0.9,0.3605126211463577,después_s1,poster,después
+Sport,es,palabra,deportes,0.9,0.33185142965429554,después_s1,poster,después
+Sport,en,frase,a sports movie,1.0,0.3492239455303524,después_s1,poster,después
+Sport,en,palabra,sports,0.8,0.31901174608361943,después_s1,poster,después
+Film-Noir,es,frase,una película de cine negro,0.3,0.1044412515014157,después_s1,poster,después
+Film-Noir,es,palabra,cine negro,0.3,0.10765673250356048,después_s1,poster,después
+Film-Noir,en,frase,a film noir,0.4,0.10349215548080427,después_s1,poster,después
+Film-Noir,en,palabra,noir,0.3,0.06157968244881414,después_s1,poster,después
+Drama,es,frase,una película dramática,0.9,0.7950269357918569,después_s1,sinopsis,después
+Drama,es,palabra,drama,1.0,0.8165664183110433,después_s1,sinopsis,después
+Drama,en,frase,a drama movie,1.0,0.8250999715140701,después_s1,sinopsis,después
+Drama,en,palabra,drama,1.0,0.8165664183110433,después_s1,sinopsis,después
+Comedy,es,frase,una película de comedia,1.0,0.7188884541359124,después_s1,sinopsis,después
+Comedy,es,palabra,comedia,1.0,0.6797331182238701,después_s1,sinopsis,después
+Comedy,en,frase,a comedy movie,1.0,0.7090416761916046,después_s1,sinopsis,después
+Comedy,en,palabra,comedy,1.0,0.6979876173319081,después_s1,sinopsis,después
+Romance,es,frase,una película romántica,1.0,0.5585767065053124,después_s1,sinopsis,después
+Romance,es,palabra,romance,0.7,0.5524614472872671,después_s1,sinopsis,después
+Romance,en,frase,a romantic movie,1.0,0.5501617102035464,después_s1,sinopsis,después
+Romance,en,palabra,romance,0.7,0.5524614472872671,después_s1,sinopsis,después
+Thriller,es,frase,una película de suspenso,0.5,0.3131278560408695,después_s1,sinopsis,después
+Thriller,es,palabra,suspenso,0.4,0.275837638788582,después_s1,sinopsis,después
+Thriller,en,frase,a thriller movie,0.7,0.33843450652884266,después_s1,sinopsis,después
+Thriller,en,palabra,thriller,0.7,0.32904620494395487,después_s1,sinopsis,después
+Crime,es,frase,una película de crimen,0.8,0.6466808440150623,después_s1,sinopsis,después
+Crime,es,palabra,crimen,1.0,0.617556167348273,después_s1,sinopsis,después
+Crime,en,frase,a crime movie,0.9,0.6777260386721652,después_s1,sinopsis,después
+Crime,en,palabra,crime,1.0,0.6632099113394557,después_s1,sinopsis,después
+Action,es,frase,una película de acción,0.9,0.6036053496994316,después_s1,sinopsis,después
+Action,es,palabra,acción,0.8,0.5618937231087309,después_s1,sinopsis,después
+Action,en,frase,an action movie,1.0,0.5918868421999308,después_s1,sinopsis,después
+Action,en,palabra,action,0.8,0.5786894059458467,después_s1,sinopsis,después
+Adventure,es,frase,una película de aventuras,1.0,0.5626775006704902,después_s1,sinopsis,después
+Adventure,es,palabra,aventura,0.8,0.5154725970998882,después_s1,sinopsis,después
+Adventure,en,frase,an adventure movie,1.0,0.5680831507193927,después_s1,sinopsis,después
+Adventure,en,palabra,adventure,0.9,0.545460791962289,después_s1,sinopsis,después
+Horror,es,frase,una película de terror,1.0,0.6310241271483971,después_s1,sinopsis,después
+Horror,es,palabra,terror,1.0,0.4916713048715225,después_s1,sinopsis,después
+Horror,en,frase,a horror movie,0.8,0.6576606278142352,después_s1,sinopsis,después
+Horror,en,palabra,horror,1.0,0.6419139782616227,después_s1,sinopsis,después
+Documentary,es,frase,un documental,1.0,0.8246635501964261,después_s1,sinopsis,después
+Documentary,es,palabra,documental,1.0,0.8261914182242828,después_s1,sinopsis,después
+Documentary,en,frase,a documentary,1.0,0.8253604183545894,después_s1,sinopsis,después
+Documentary,en,palabra,documentary,1.0,0.8303234501677699,después_s1,sinopsis,después
+Mystery,es,frase,una película de misterio,0.5,0.3468883682970428,después_s1,sinopsis,después
+Mystery,es,palabra,misterio,0.5,0.34834603156492766,después_s1,sinopsis,después
+Mystery,en,frase,a mystery movie,0.6,0.35403838614488164,después_s1,sinopsis,después
+Mystery,en,palabra,mystery,0.5,0.3731406434542807,después_s1,sinopsis,después
+Sci-Fi,es,frase,una película de ciencia ficción,0.7,0.520762354264543,después_s1,sinopsis,después
+Sci-Fi,es,palabra,ciencia ficción,0.6,0.5005399156500269,después_s1,sinopsis,después
+Sci-Fi,en,frase,a science fiction movie,0.8,0.5240956131209727,después_s1,sinopsis,después
+Sci-Fi,en,palabra,sci-fi,0.7,0.48741449579622487,después_s1,sinopsis,después
+Fantasy,es,frase,una película de fantasía,0.5,0.23748225423937339,después_s1,sinopsis,después
+Fantasy,es,palabra,fantasía,0.5,0.2249431208215332,después_s1,sinopsis,después
+Fantasy,en,frase,a fantasy movie,0.5,0.26385578847648183,después_s1,sinopsis,después
+Fantasy,en,palabra,fantasy,0.3,0.24184209741295992,después_s1,sinopsis,después
+Family,es,frase,una película familiar,0.4,0.23026987372247676,después_s1,sinopsis,después
+Family,es,palabra,familia,0.4,0.1650643851165314,después_s1,sinopsis,después
+Family,en,frase,a family movie,0.6,0.27118590091189754,después_s1,sinopsis,después
+Family,en,palabra,family,0.2,0.2009614552575064,después_s1,sinopsis,después
+Biography,es,frase,una película biográfica,1.0,0.3692033120851958,después_s1,sinopsis,después
+Biography,es,palabra,biografía,0.7,0.3602762296226272,después_s1,sinopsis,después
+Biography,en,frase,a biographical movie,0.9,0.35283867491493803,después_s1,sinopsis,después
+Biography,en,palabra,biography,0.8,0.4056753898379762,después_s1,sinopsis,después
+War,es,frase,una película de guerra,0.6,0.433461742200889,después_s1,sinopsis,después
+War,es,palabra,guerra,0.7,0.38721272099290216,después_s1,sinopsis,después
+War,en,frase,a war movie,0.5,0.4377849796377255,después_s1,sinopsis,después
+War,en,palabra,war,0.9,0.38312864093983096,después_s1,sinopsis,después
+History,es,frase,una película histórica,0.5,0.3081413406729523,después_s1,sinopsis,después
+History,es,palabra,historia,0.6,0.28633267962147124,después_s1,sinopsis,después
+History,en,frase,a historical movie,0.6,0.3288388348007892,después_s1,sinopsis,después
+History,en,palabra,history,0.7,0.3144544269202721,después_s1,sinopsis,después
+Music,es,frase,una película sobre música,0.9,0.5325402873377785,después_s1,sinopsis,después
+Music,es,palabra,música,0.7,0.5179603415198875,después_s1,sinopsis,después
+Music,en,frase,a movie about music,0.9,0.5369721731129277,después_s1,sinopsis,después
+Music,en,palabra,music,0.7,0.5373853239109808,después_s1,sinopsis,después
+Animation,es,frase,una película animada,0.7,0.3128779683218844,después_s1,sinopsis,después
+Animation,es,palabra,animación,0.5,0.3058565024295498,después_s1,sinopsis,después
+Animation,en,frase,an animated movie,0.6,0.3579805738718472,después_s1,sinopsis,después
+Animation,en,palabra,animation,0.5,0.289911268804354,después_s1,sinopsis,después
+Musical,es,frase,un musical,0.6,0.19448511291152903,después_s1,sinopsis,después
+Musical,es,palabra,musical,0.5,0.1761278576238958,después_s1,sinopsis,después
+Musical,en,frase,a musical,0.5,0.2050952514734223,después_s1,sinopsis,después
+Musical,en,palabra,musical,0.5,0.1761278576238958,después_s1,sinopsis,después
+Western,es,frase,una película del oeste,0.6,0.23943619147146172,después_s1,sinopsis,después
+Western,es,palabra,vaqueros,0.7,0.22364750779744155,después_s1,sinopsis,después
+Western,en,frase,a western movie,0.7,0.416814350309138,después_s1,sinopsis,después
+Western,en,palabra,western,0.5,0.3456192171900792,después_s1,sinopsis,después
+Sport,es,frase,una película de deportes,1.0,0.618265664704284,después_s1,sinopsis,después
+Sport,es,palabra,deportes,0.9,0.433080197558431,después_s1,sinopsis,después
+Sport,en,frase,a sports movie,1.0,0.6100883204734804,después_s1,sinopsis,después
+Sport,en,palabra,sports,0.9,0.5705889269475511,después_s1,sinopsis,después
+Film-Noir,es,frase,una película de cine negro,0.1,0.0631326049270476,después_s1,sinopsis,después
+Film-Noir,es,palabra,cine negro,0.1,0.056980511749681724,después_s1,sinopsis,después
+Film-Noir,en,frase,a film noir,0.2,0.05929100547358466,después_s1,sinopsis,después
+Film-Noir,en,palabra,noir,0.0,0.03574938801734125,después_s1,sinopsis,después
+Drama,es,frase,una película dramática,1.0,0.8041920441471495,después_s1,ambos,después
+Drama,es,palabra,drama,1.0,0.84285385921683,después_s1,ambos,después
+Drama,en,frase,a drama movie,1.0,0.8472542880255511,después_s1,ambos,después
+Drama,en,palabra,drama,1.0,0.84285385921683,después_s1,ambos,después
+Comedy,es,frase,una película de comedia,1.0,0.8078651441736634,después_s1,ambos,después
+Comedy,es,palabra,comedia,1.0,0.7926627355790554,después_s1,ambos,después
+Comedy,en,frase,a comedy movie,1.0,0.8030117634615213,después_s1,ambos,después
+Comedy,en,palabra,comedy,1.0,0.8032452422863555,después_s1,ambos,después
+Romance,es,frase,una película romántica,1.0,0.6087165583089355,después_s1,ambos,después
+Romance,es,palabra,romance,1.0,0.6066529588442942,después_s1,ambos,después
+Romance,en,frase,a romantic movie,1.0,0.5968212558743891,después_s1,ambos,después
+Romance,en,palabra,romance,1.0,0.6066529588442942,después_s1,ambos,después
+Thriller,es,frase,una película de suspenso,0.2,0.3598746158820428,después_s1,ambos,después
+Thriller,es,palabra,suspenso,0.4,0.351395228529509,después_s1,ambos,después
+Thriller,en,frase,a thriller movie,0.5,0.3865334961328737,después_s1,ambos,después
+Thriller,en,palabra,thriller,0.5,0.3876513177590378,después_s1,ambos,después
+Crime,es,frase,una película de crimen,0.9,0.6579765268636059,después_s1,ambos,después
+Crime,es,palabra,crimen,0.9,0.6333556615008034,después_s1,ambos,después
+Crime,en,frase,a crime movie,1.0,0.6712833233214888,después_s1,ambos,después
+Crime,en,palabra,crime,1.0,0.6658281563860073,después_s1,ambos,después
+Action,es,frase,una película de acción,1.0,0.6955732481664174,después_s1,ambos,después
+Action,es,palabra,acción,0.9,0.687362811827811,después_s1,ambos,después
+Action,en,frase,an action movie,1.0,0.6865145013807371,después_s1,ambos,después
+Action,en,palabra,action,0.9,0.6965129934954667,después_s1,ambos,después
+Adventure,es,frase,una película de aventuras,1.0,0.6126731827755195,después_s1,ambos,después
+Adventure,es,palabra,aventura,1.0,0.5699538100466094,después_s1,ambos,después
+Adventure,en,frase,an adventure movie,1.0,0.6061018804551612,después_s1,ambos,después
+Adventure,en,palabra,adventure,1.0,0.5953173770713471,después_s1,ambos,después
+Horror,es,frase,una película de terror,1.0,0.7519960684431259,después_s1,ambos,después
+Horror,es,palabra,terror,1.0,0.6449741245990228,después_s1,ambos,después
+Horror,en,frase,a horror movie,0.9,0.7807266483882177,después_s1,ambos,después
+Horror,en,palabra,horror,1.0,0.7685770095566179,después_s1,ambos,después
+Documentary,es,frase,un documental,1.0,0.8225962726549371,después_s1,ambos,después
+Documentary,es,palabra,documental,1.0,0.8088704782012832,después_s1,ambos,después
+Documentary,en,frase,a documentary,1.0,0.8351072094655702,después_s1,ambos,después
+Documentary,en,palabra,documentary,1.0,0.8338250729493257,después_s1,ambos,después
+Mystery,es,frase,una película de misterio,0.5,0.35975122039138263,después_s1,ambos,después
+Mystery,es,palabra,misterio,0.5,0.36157807323440494,después_s1,ambos,después
+Mystery,en,frase,a mystery movie,0.7,0.3621096958617824,después_s1,ambos,después
+Mystery,en,palabra,mystery,0.7,0.38197823347495813,después_s1,ambos,después
+Sci-Fi,es,frase,una película de ciencia ficción,0.8,0.5444945816900919,después_s1,ambos,después
+Sci-Fi,es,palabra,ciencia ficción,0.6,0.518688450412665,después_s1,ambos,después
+Sci-Fi,en,frase,a science fiction movie,0.9,0.5469657078858442,después_s1,ambos,después
+Sci-Fi,en,palabra,sci-fi,0.7,0.49967712881399695,después_s1,ambos,después
+Fantasy,es,frase,una película de fantasía,0.5,0.26654303827855524,después_s1,ambos,después
+Fantasy,es,palabra,fantasía,0.5,0.2359231222913843,después_s1,ambos,después
+Fantasy,en,frase,a fantasy movie,0.5,0.2837886463958405,después_s1,ambos,después
+Fantasy,en,palabra,fantasy,0.7,0.27651970876961784,después_s1,ambos,después
+Family,es,frase,una película familiar,0.7,0.34665755247132224,después_s1,ambos,después
+Family,es,palabra,familia,0.3,0.29593280946808526,después_s1,ambos,después
+Family,en,frase,a family movie,0.4,0.3566943119331623,después_s1,ambos,después
+Family,en,palabra,family,0.3,0.31261801796498867,después_s1,ambos,después
+Biography,es,frase,una película biográfica,0.6,0.31392524343098926,después_s1,ambos,después
+Biography,es,palabra,biografía,0.7,0.3425843095933089,después_s1,ambos,después
+Biography,en,frase,a biographical movie,0.8,0.32892985797672286,después_s1,ambos,después
+Biography,en,palabra,biography,0.8,0.3649243351241137,después_s1,ambos,después
+War,es,frase,una película de guerra,0.7,0.40026013691327955,después_s1,ambos,después
+War,es,palabra,guerra,0.8,0.3457917962030246,después_s1,ambos,después
+War,en,frase,a war movie,0.8,0.42422792355989963,después_s1,ambos,después
+War,en,palabra,war,0.7,0.3509728496231834,después_s1,ambos,después
+History,es,frase,una película histórica,0.5,0.2961118819565533,después_s1,ambos,después
+History,es,palabra,historia,0.6,0.2815662005602277,después_s1,ambos,después
+History,en,frase,a historical movie,0.7,0.3126438078771319,después_s1,ambos,después
+History,en,palabra,history,0.5,0.30739808541556907,después_s1,ambos,después
+Music,es,frase,una película sobre música,0.7,0.514026303659777,después_s1,ambos,después
+Music,es,palabra,música,0.7,0.49513345238619355,después_s1,ambos,después
+Music,en,frase,a movie about music,0.8,0.5011076215793459,después_s1,ambos,después
+Music,en,palabra,music,0.8,0.5252359023892984,después_s1,ambos,después
+Animation,es,frase,una película animada,1.0,0.6400908742072158,después_s1,ambos,después
+Animation,es,palabra,animación,1.0,0.5727877840521645,después_s1,ambos,después
+Animation,en,frase,an animated movie,1.0,0.7201245919242206,después_s1,ambos,después
+Animation,en,palabra,animation,1.0,0.704989408418867,después_s1,ambos,después
+Musical,es,frase,un musical,0.3,0.190874942609921,después_s1,ambos,después
+Musical,es,palabra,musical,0.1,0.19099696811698869,después_s1,ambos,después
+Musical,en,frase,a musical,0.4,0.22685996239886655,después_s1,ambos,después
+Musical,en,palabra,musical,0.1,0.19099696811698869,después_s1,ambos,después
+Western,es,frase,una película del oeste,0.8,0.5112366453089038,después_s1,ambos,después
+Western,es,palabra,vaqueros,0.9,0.5180647488098923,después_s1,ambos,después
+Western,en,frase,a western movie,0.7,0.5903393851050475,después_s1,ambos,después
+Western,en,palabra,western,0.7,0.5703012493741716,después_s1,ambos,después
+Sport,es,frase,una película de deportes,1.0,0.6222660998478198,después_s1,ambos,después
+Sport,es,palabra,deportes,1.0,0.5256497076779669,después_s1,ambos,después
+Sport,en,frase,a sports movie,1.0,0.6074754368058309,después_s1,ambos,después
+Sport,en,palabra,sports,0.9,0.5708643072957702,después_s1,ambos,después
+Film-Noir,es,frase,una película de cine negro,0.4,0.15296251790213652,después_s1,ambos,después
+Film-Noir,es,palabra,cine negro,0.4,0.14411324369660047,después_s1,ambos,después
+Film-Noir,en,frase,a film noir,0.1,0.10580333859730673,después_s1,ambos,después
+Film-Noir,en,palabra,noir,0.2,0.05477627542900819,después_s1,ambos,después
+Drama,es,frase,una película dramática,0.7,0.7131884994140174,después_s2,poster,después
+Drama,es,palabra,drama,0.8,0.7710486573955984,después_s2,poster,después
+Drama,en,frase,a drama movie,0.9,0.7701565732662408,después_s2,poster,después
+Drama,en,palabra,drama,0.8,0.7710486573955984,después_s2,poster,después
+Comedy,es,frase,una película de comedia,1.0,0.7528469249383158,después_s2,poster,después
+Comedy,es,palabra,comedia,1.0,0.7452544417614875,después_s2,poster,después
+Comedy,en,frase,a comedy movie,1.0,0.7504815057671952,después_s2,poster,después
+Comedy,en,palabra,comedy,1.0,0.752979576191525,después_s2,poster,después
+Romance,es,frase,una película romántica,0.8,0.505746526170544,después_s2,poster,después
+Romance,es,palabra,romance,0.8,0.49798853807955634,después_s2,poster,después
+Romance,en,frase,a romantic movie,0.8,0.4964712847064699,después_s2,poster,después
+Romance,en,palabra,romance,0.8,0.49798853807955634,después_s2,poster,después
+Thriller,es,frase,una película de suspenso,0.3,0.2972221195262009,después_s2,poster,después
+Thriller,es,palabra,suspenso,0.4,0.3003513556704635,después_s2,poster,después
+Thriller,en,frase,a thriller movie,0.2,0.314596358796844,después_s2,poster,después
+Thriller,en,palabra,thriller,0.4,0.322222243608265,después_s2,poster,después
+Crime,es,frase,una película de crimen,0.8,0.4739358206541754,después_s2,poster,después
+Crime,es,palabra,crimen,0.8,0.45153804903400574,después_s2,poster,después
+Crime,en,frase,a crime movie,0.9,0.44837005043686307,después_s2,poster,después
+Crime,en,palabra,crime,0.8,0.4574915451096037,después_s2,poster,después
+Action,es,frase,una película de acción,0.9,0.5829238210105152,después_s2,poster,después
+Action,es,palabra,acción,1.0,0.5855034565383138,después_s2,poster,después
+Action,en,frase,an action movie,0.9,0.5888589838653235,después_s2,poster,después
+Action,en,palabra,action,1.0,0.5927705403040038,después_s2,poster,después
+Adventure,es,frase,una película de aventuras,1.0,0.4783446732708499,después_s2,poster,después
+Adventure,es,palabra,aventura,0.9,0.45471078305165125,después_s2,poster,después
+Adventure,en,frase,an adventure movie,1.0,0.4816747657808884,después_s2,poster,después
+Adventure,en,palabra,adventure,1.0,0.4796933118818112,después_s2,poster,después
+Horror,es,frase,una película de terror,1.0,0.6371517809026562,después_s2,poster,después
+Horror,es,palabra,terror,1.0,0.5456691491321396,después_s2,poster,después
+Horror,en,frase,a horror movie,1.0,0.6571945038610142,después_s2,poster,después
+Horror,en,palabra,horror,1.0,0.6442989585868446,después_s2,poster,después
+Documentary,es,frase,un documental,0.6,0.35336044552755386,después_s2,poster,después
+Documentary,es,palabra,documental,0.5,0.33798379174628207,después_s2,poster,después
+Documentary,en,frase,a documentary,0.6,0.387417667328628,después_s2,poster,después
+Documentary,en,palabra,documentary,0.7,0.392846079750623,después_s2,poster,después
+Mystery,es,frase,una película de misterio,0.5,0.22420584625901724,después_s2,poster,después
+Mystery,es,palabra,misterio,0.4,0.21910205370187552,después_s2,poster,después
+Mystery,en,frase,a mystery movie,0.7,0.1961518586505103,después_s2,poster,después
+Mystery,en,palabra,mystery,0.5,0.22172846935133744,después_s2,poster,después
+Sci-Fi,es,frase,una película de ciencia ficción,0.8,0.37523183439784735,después_s2,poster,después
+Sci-Fi,es,palabra,ciencia ficción,0.8,0.34449985733467586,después_s2,poster,después
+Sci-Fi,en,frase,a science fiction movie,0.8,0.3798017745633322,después_s2,poster,después
+Sci-Fi,en,palabra,sci-fi,0.7,0.3264886225567625,después_s2,poster,después
+Fantasy,es,frase,una película de fantasía,0.5,0.19045594413896352,después_s2,poster,después
+Fantasy,es,palabra,fantasía,0.5,0.16099136402243266,después_s2,poster,después
+Fantasy,en,frase,a fantasy movie,0.5,0.2064794733800681,después_s2,poster,después
+Fantasy,en,palabra,fantasy,0.7,0.20145746926747288,después_s2,poster,después
+Family,es,frase,una película familiar,0.3,0.269522749404993,después_s2,poster,después
+Family,es,palabra,familia,0.4,0.25002713557250583,después_s2,poster,después
+Family,en,frase,a family movie,0.3,0.27906918668590086,después_s2,poster,después
+Family,en,palabra,family,0.4,0.25630860557989465,después_s2,poster,después
+Biography,es,frase,una película biográfica,0.4,0.1266387942848855,después_s2,poster,después
+Biography,es,palabra,biografía,0.2,0.1466665246750116,después_s2,poster,después
+Biography,en,frase,a biographical movie,0.4,0.1320607048289811,después_s2,poster,después
+Biography,en,palabra,biography,0.4,0.14675611700335553,después_s2,poster,después
+War,es,frase,una película de guerra,0.6,0.19991942099459087,después_s2,poster,después
+War,es,palabra,guerra,0.5,0.16438223445790837,después_s2,poster,después
+War,en,frase,a war movie,0.7,0.21329790258782844,después_s2,poster,después
+War,en,palabra,war,0.5,0.16846265053289822,después_s2,poster,después
+History,es,frase,una película histórica,0.5,0.1672395122708269,después_s2,poster,después
+History,es,palabra,historia,0.2,0.16159036378870828,después_s2,poster,después
+History,en,frase,a historical movie,0.6,0.17724643926343045,después_s2,poster,después
+History,en,palabra,history,0.3,0.16838452594945852,después_s2,poster,después
+Music,es,frase,una película sobre música,0.6,0.20978775919302617,después_s2,poster,después
+Music,es,palabra,música,0.3,0.1746459361383819,después_s2,poster,después
+Music,en,frase,a movie about music,0.6,0.17825250414369576,después_s2,poster,después
+Music,en,palabra,music,0.3,0.17894411515993944,después_s2,poster,después
+Animation,es,frase,una película animada,0.9,0.6400229713790124,después_s2,poster,después
+Animation,es,palabra,animación,0.8,0.4425973361416209,después_s2,poster,después
+Animation,en,frase,an animated movie,1.0,0.753603915538675,después_s2,poster,después
+Animation,en,palabra,animation,1.0,0.7288421031374819,después_s2,poster,después
+Musical,es,frase,un musical,0.3,0.09801127833802993,después_s2,poster,después
+Musical,es,palabra,musical,0.3,0.10322769699822738,después_s2,poster,después
+Musical,en,frase,a musical,0.4,0.11456345348954253,después_s2,poster,después
+Musical,en,palabra,musical,0.3,0.10322769699822738,después_s2,poster,después
+Western,es,frase,una película del oeste,0.9,0.45248945068333196,después_s2,poster,después
+Western,es,palabra,vaqueros,0.9,0.4610544120809618,después_s2,poster,después
+Western,en,frase,a western movie,0.9,0.5279711340514885,después_s2,poster,después
+Western,en,palabra,western,0.8,0.537983966229445,después_s2,poster,después
+Sport,es,frase,una película de deportes,1.0,0.36220178567470757,después_s2,poster,después
+Sport,es,palabra,deportes,0.8,0.32662995950663964,después_s2,poster,después
+Sport,en,frase,a sports movie,1.0,0.348080958315387,después_s2,poster,después
+Sport,en,palabra,sports,0.8,0.3153664997867461,después_s2,poster,después
+Film-Noir,es,frase,una película de cine negro,0.4,0.13203752487869716,después_s2,poster,después
+Film-Noir,es,palabra,cine negro,0.3,0.12777689953301155,después_s2,poster,después
+Film-Noir,en,frase,a film noir,0.3,0.12001155828824861,después_s2,poster,después
+Film-Noir,en,palabra,noir,0.3,0.06834834045655291,después_s2,poster,después
+Drama,es,frase,una película dramática,0.9,0.7923629117833477,después_s2,sinopsis,después
+Drama,es,palabra,drama,1.0,0.8164769267917051,después_s2,sinopsis,después
+Drama,en,frase,a drama movie,1.0,0.8254593694392226,después_s2,sinopsis,después
+Drama,en,palabra,drama,1.0,0.8164769267917051,después_s2,sinopsis,después
+Comedy,es,frase,una película de comedia,1.0,0.7192832056883243,después_s2,sinopsis,después
+Comedy,es,palabra,comedia,1.0,0.6757442324759897,después_s2,sinopsis,después
+Comedy,en,frase,a comedy movie,1.0,0.7117066257859986,después_s2,sinopsis,después
+Comedy,en,palabra,comedy,1.0,0.7005145991161696,después_s2,sinopsis,después
+Romance,es,frase,una película romántica,0.8,0.5586524147024146,después_s2,sinopsis,después
+Romance,es,palabra,romance,0.9,0.5565994584149234,después_s2,sinopsis,después
+Romance,en,frase,a romantic movie,1.0,0.5498673141948517,después_s2,sinopsis,después
+Romance,en,palabra,romance,0.9,0.5565994584149234,después_s2,sinopsis,después
+Thriller,es,frase,una película de suspenso,0.5,0.31345145432716226,después_s2,sinopsis,después
+Thriller,es,palabra,suspenso,0.2,0.27185481468023454,después_s2,sinopsis,después
+Thriller,en,frase,a thriller movie,0.6,0.33854613541248874,después_s2,sinopsis,después
+Thriller,en,palabra,thriller,0.7,0.330141764150363,después_s2,sinopsis,después
+Crime,es,frase,una película de crimen,0.8,0.6457514966814634,después_s2,sinopsis,después
+Crime,es,palabra,crimen,0.9,0.6144428149570101,después_s2,sinopsis,después
+Crime,en,frase,a crime movie,0.9,0.6786981920304629,después_s2,sinopsis,después
+Crime,en,palabra,crime,1.0,0.6630836100086664,después_s2,sinopsis,después
+Action,es,frase,una película de acción,0.9,0.6018156683500785,después_s2,sinopsis,después
+Action,es,palabra,acción,0.8,0.5593644440244843,después_s2,sinopsis,después
+Action,en,frase,an action movie,1.0,0.5866282687351703,después_s2,sinopsis,después
+Action,en,palabra,action,0.9,0.576174060662704,después_s2,sinopsis,después
+Adventure,es,frase,una película de aventuras,1.0,0.5616464982225307,después_s2,sinopsis,después
+Adventure,es,palabra,aventura,0.8,0.5162094652790625,después_s2,sinopsis,después
+Adventure,en,frase,an adventure movie,1.0,0.5671668750427087,después_s2,sinopsis,después
+Adventure,en,palabra,adventure,0.9,0.5465650350249899,después_s2,sinopsis,después
+Horror,es,frase,una película de terror,1.0,0.6483521906176027,después_s2,sinopsis,después
+Horror,es,palabra,terror,1.0,0.5104895189934364,después_s2,sinopsis,después
+Horror,en,frase,a horror movie,0.9,0.6667620304035836,después_s2,sinopsis,después
+Horror,en,palabra,horror,1.0,0.6536316902359285,después_s2,sinopsis,después
+Documentary,es,frase,un documental,1.0,0.831738026540412,después_s2,sinopsis,después
+Documentary,es,palabra,documental,1.0,0.8301225025210979,después_s2,sinopsis,después
+Documentary,en,frase,a documentary,1.0,0.8292441561013619,después_s2,sinopsis,después
+Documentary,en,palabra,documentary,1.0,0.8323767382256018,después_s2,sinopsis,después
+Mystery,es,frase,una película de misterio,0.6,0.3489930734479238,después_s2,sinopsis,después
+Mystery,es,palabra,misterio,0.7,0.34689287158949395,después_s2,sinopsis,después
+Mystery,en,frase,a mystery movie,0.7,0.3542999757094003,después_s2,sinopsis,después
+Mystery,en,palabra,mystery,0.4,0.3746949725847139,después_s2,sinopsis,después
+Sci-Fi,es,frase,una película de ciencia ficción,0.6,0.5204925869754219,después_s2,sinopsis,después
+Sci-Fi,es,palabra,ciencia ficción,0.7,0.5032767657248856,después_s2,sinopsis,después
+Sci-Fi,en,frase,a science fiction movie,0.8,0.5221854091861258,después_s2,sinopsis,después
+Sci-Fi,en,palabra,sci-fi,0.7,0.491542365952694,después_s2,sinopsis,después
+Fantasy,es,frase,una película de fantasía,0.3,0.24226930595625173,después_s2,sinopsis,después
+Fantasy,es,palabra,fantasía,0.5,0.2277747823806578,después_s2,sinopsis,después
+Fantasy,en,frase,a fantasy movie,0.6,0.2696634603425243,después_s2,sinopsis,después
+Fantasy,en,palabra,fantasy,0.5,0.2415772682163579,después_s2,sinopsis,después
+Family,es,frase,una película familiar,0.5,0.23437106731841598,después_s2,sinopsis,después
+Family,es,palabra,familia,0.4,0.16931544208443103,después_s2,sinopsis,después
+Family,en,frase,a family movie,0.5,0.2781321502506087,después_s2,sinopsis,después
+Family,en,palabra,family,0.3,0.20783163416323486,después_s2,sinopsis,después
+Biography,es,frase,una película biográfica,1.0,0.3721784085726731,después_s2,sinopsis,después
+Biography,es,palabra,biografía,0.7,0.3727382810898117,después_s2,sinopsis,después
+Biography,en,frase,a biographical movie,0.9,0.35291503353494236,después_s2,sinopsis,después
+Biography,en,palabra,biography,0.8,0.41261048848720644,después_s2,sinopsis,después
+War,es,frase,una película de guerra,0.5,0.43761797031733385,después_s2,sinopsis,después
+War,es,palabra,guerra,0.7,0.3957920656227428,después_s2,sinopsis,después
+War,en,frase,a war movie,0.6,0.4415712818141295,después_s2,sinopsis,después
+War,en,palabra,war,0.9,0.38773183649356,después_s2,sinopsis,después
+History,es,frase,una película histórica,0.4,0.3083433052129034,después_s2,sinopsis,después
+History,es,palabra,historia,0.6,0.2901475113494082,después_s2,sinopsis,después
+History,en,frase,a historical movie,0.6,0.3286681939427311,después_s2,sinopsis,después
+History,en,palabra,history,0.7,0.3166180277217824,después_s2,sinopsis,después
+Music,es,frase,una película sobre música,1.0,0.5319697274207447,después_s2,sinopsis,después
+Music,es,palabra,música,0.8,0.519913250851019,después_s2,sinopsis,después
+Music,en,frase,a movie about music,1.0,0.5415283077024949,después_s2,sinopsis,después
+Music,en,palabra,music,0.7,0.5377199042045494,después_s2,sinopsis,después
+Animation,es,frase,una película animada,0.6,0.30790746623874954,después_s2,sinopsis,después
+Animation,es,palabra,animación,0.5,0.30138988795509203,después_s2,sinopsis,después
+Animation,en,frase,an animated movie,0.7,0.3526400006324478,después_s2,sinopsis,después
+Animation,en,palabra,animation,0.6,0.2800821257222585,después_s2,sinopsis,después
+Musical,es,frase,un musical,0.6,0.191165308371045,después_s2,sinopsis,después
+Musical,es,palabra,musical,0.5,0.17403587303254545,después_s2,sinopsis,después
+Musical,en,frase,a musical,0.5,0.20430043502569833,después_s2,sinopsis,después
+Musical,en,palabra,musical,0.5,0.17403587303254545,después_s2,sinopsis,después
+Western,es,frase,una película del oeste,0.7,0.24374051614832634,después_s2,sinopsis,después
+Western,es,palabra,vaqueros,0.7,0.22522316891588712,después_s2,sinopsis,después
+Western,en,frase,a western movie,0.7,0.42778881289781534,después_s2,sinopsis,después
+Western,en,palabra,western,0.5,0.3469593111661633,después_s2,sinopsis,después
+Sport,es,frase,una película de deportes,1.0,0.6284298008741255,después_s2,sinopsis,después
+Sport,es,palabra,deportes,0.9,0.43789613749232087,después_s2,sinopsis,después
+Sport,en,frase,a sports movie,1.0,0.6109109502009039,después_s2,sinopsis,después
+Sport,en,palabra,sports,0.9,0.5737279391886263,después_s2,sinopsis,después
+Film-Noir,es,frase,una película de cine negro,0.1,0.061240122685247304,después_s2,sinopsis,después
+Film-Noir,es,palabra,cine negro,0.1,0.054772996197795076,después_s2,sinopsis,después
+Film-Noir,en,frase,a film noir,0.2,0.05904517345892283,después_s2,sinopsis,después
+Film-Noir,en,palabra,noir,0.0,0.03493559836616623,después_s2,sinopsis,después
+Drama,es,frase,una película dramática,1.0,0.8004158094232275,después_s2,ambos,después
+Drama,es,palabra,drama,1.0,0.8410438871900259,después_s2,ambos,después
+Drama,en,frase,a drama movie,1.0,0.8379790888414362,después_s2,ambos,después
+Drama,en,palabra,drama,1.0,0.8410438871900259,después_s2,ambos,después
+Comedy,es,frase,una película de comedia,1.0,0.813505106714324,después_s2,ambos,después
+Comedy,es,palabra,comedia,1.0,0.7942761949749368,después_s2,ambos,después
+Comedy,en,frase,a comedy movie,1.0,0.8095274798296994,después_s2,ambos,después
+Comedy,en,palabra,comedy,1.0,0.8071036983159505,después_s2,ambos,después
+Romance,es,frase,una película romántica,0.9,0.6131457588875279,después_s2,ambos,después
+Romance,es,palabra,romance,1.0,0.612144704719667,después_s2,ambos,después
+Romance,en,frase,a romantic movie,0.9,0.6001026086580581,después_s2,ambos,después
+Romance,en,palabra,romance,1.0,0.612144704719667,después_s2,ambos,después
+Thriller,es,frase,una película de suspenso,0.6,0.36860579029909646,después_s2,ambos,después
+Thriller,es,palabra,suspenso,0.5,0.3484269098525891,después_s2,ambos,después
+Thriller,en,frase,a thriller movie,0.6,0.3892362120823414,después_s2,ambos,después
+Thriller,en,palabra,thriller,0.7,0.38752805554182884,después_s2,ambos,después
+Crime,es,frase,una película de crimen,0.9,0.6602441319077957,después_s2,ambos,después
+Crime,es,palabra,crimen,0.9,0.635219643421451,después_s2,ambos,después
+Crime,en,frase,a crime movie,1.0,0.6729740143785092,después_s2,ambos,después
+Crime,en,palabra,crime,1.0,0.6672339596012499,después_s2,ambos,después
+Action,es,frase,una película de acción,1.0,0.6956130192956165,después_s2,ambos,después
+Action,es,palabra,acción,1.0,0.6815435912605717,después_s2,ambos,después
+Action,en,frase,an action movie,1.0,0.6856312452346445,después_s2,ambos,después
+Action,en,palabra,action,1.0,0.6917457665229918,después_s2,ambos,después
+Adventure,es,frase,una película de aventuras,1.0,0.6085809569033496,después_s2,ambos,después
+Adventure,es,palabra,aventura,1.0,0.5716668861727322,después_s2,ambos,después
+Adventure,en,frase,an adventure movie,1.0,0.6041151082770844,después_s2,ambos,después
+Adventure,en,palabra,adventure,1.0,0.5948236955569493,después_s2,ambos,después
+Horror,es,frase,una película de terror,1.0,0.7607533047366508,después_s2,ambos,después
+Horror,es,palabra,terror,1.0,0.6517854267638378,después_s2,ambos,después
+Horror,en,frase,a horror movie,0.9,0.7822512998221796,después_s2,ambos,después
+Horror,en,palabra,horror,1.0,0.7709040637336583,después_s2,ambos,después
+Documentary,es,frase,un documental,1.0,0.8220965259845171,después_s2,ambos,después
+Documentary,es,palabra,documental,1.0,0.8083719416513898,después_s2,ambos,después
+Documentary,en,frase,a documentary,1.0,0.8326551893776797,después_s2,ambos,después
+Documentary,en,palabra,documentary,1.0,0.8318520705692604,después_s2,ambos,después
+Mystery,es,frase,una película de misterio,0.5,0.3537351187482392,después_s2,ambos,después
+Mystery,es,palabra,misterio,0.6,0.35085921473569104,después_s2,ambos,después
+Mystery,en,frase,a mystery movie,0.8,0.3527475307190834,después_s2,ambos,después
+Mystery,en,palabra,mystery,0.6,0.378724929820274,después_s2,ambos,después
+Sci-Fi,es,frase,una película de ciencia ficción,0.8,0.5469317208157863,después_s2,ambos,después
+Sci-Fi,es,palabra,ciencia ficción,0.7,0.5264764056465442,después_s2,ambos,después
+Sci-Fi,en,frase,a science fiction movie,0.8,0.547185003456774,después_s2,ambos,después
+Sci-Fi,en,palabra,sci-fi,0.8,0.5041364977167269,después_s2,ambos,después
+Fantasy,es,frase,una película de fantasía,0.6,0.274117270411504,después_s2,ambos,después
+Fantasy,es,palabra,fantasía,0.5,0.23806268317562496,después_s2,ambos,después
+Fantasy,en,frase,a fantasy movie,0.5,0.28829541555143184,después_s2,ambos,después
+Fantasy,en,palabra,fantasy,0.7,0.28133065175088234,después_s2,ambos,después
+Family,es,frase,una película familiar,0.8,0.34539148669809694,después_s2,ambos,después
+Family,es,palabra,familia,0.4,0.3001619653429076,después_s2,ambos,después
+Family,en,frase,a family movie,0.5,0.35316491107477954,después_s2,ambos,después
+Family,en,palabra,family,0.4,0.3200585552040616,después_s2,ambos,después
+Biography,es,frase,una película biográfica,0.7,0.3115649671140378,después_s2,ambos,después
+Biography,es,palabra,biografía,0.6,0.3375580396521563,después_s2,ambos,después
+Biography,en,frase,a biographical movie,0.9,0.33390554948686474,después_s2,ambos,después
+Biography,en,palabra,biography,0.8,0.3619306908202856,después_s2,ambos,después
+War,es,frase,una película de guerra,0.7,0.40559483950564373,después_s2,ambos,después
+War,es,palabra,guerra,0.7,0.3559475890385906,después_s2,ambos,después
+War,en,frase,a war movie,0.8,0.42971441780136943,después_s2,ambos,después
+War,en,palabra,war,0.7,0.3608426892416115,después_s2,ambos,después
+History,es,frase,una película histórica,0.6,0.3066943691682119,después_s2,ambos,después
+History,es,palabra,historia,0.6,0.298009812671698,después_s2,ambos,después
+History,en,frase,a historical movie,0.8,0.3220198700317618,después_s2,ambos,después
+History,en,palabra,history,0.8,0.31460901676270064,después_s2,ambos,después
+Music,es,frase,una película sobre música,0.8,0.5158152980802175,después_s2,ambos,después
+Music,es,palabra,música,0.7,0.48752878089380847,después_s2,ambos,después
+Music,en,frase,a movie about music,0.8,0.5007093318892379,después_s2,ambos,después
+Music,en,palabra,music,0.8,0.5190405299378287,después_s2,ambos,después
+Animation,es,frase,una película animada,1.0,0.6323709955470397,después_s2,ambos,después
+Animation,es,palabra,animación,1.0,0.561110319669875,después_s2,ambos,después
+Animation,en,frase,an animated movie,1.0,0.7232940661265886,después_s2,ambos,después
+Animation,en,palabra,animation,1.0,0.7025738200295839,después_s2,ambos,después
+Musical,es,frase,un musical,0.3,0.20372318074750437,después_s2,ambos,después
+Musical,es,palabra,musical,0.2,0.20114639391036163,después_s2,ambos,después
+Musical,en,frase,a musical,0.3,0.23566657816684922,después_s2,ambos,después
+Musical,en,palabra,musical,0.2,0.20114639391036163,después_s2,ambos,después
+Western,es,frase,una película del oeste,0.8,0.512193718395955,después_s2,ambos,después
+Western,es,palabra,vaqueros,0.9,0.5198464954175418,después_s2,ambos,después
+Western,en,frase,a western movie,0.7,0.5986539669466135,después_s2,ambos,después
+Western,en,palabra,western,0.8,0.5805400836907159,después_s2,ambos,después
+Sport,es,frase,una película de deportes,1.0,0.6331003973148358,después_s2,ambos,después
+Sport,es,palabra,deportes,0.9,0.5239120161752582,después_s2,ambos,después
+Sport,en,frase,a sports movie,1.0,0.6147118019566642,después_s2,ambos,después
+Sport,en,palabra,sports,0.9,0.5724382758311998,después_s2,ambos,después
+Film-Noir,es,frase,una película de cine negro,0.3,0.18576636009825173,después_s2,ambos,después
+Film-Noir,es,palabra,cine negro,0.3,0.17420943748032314,después_s2,ambos,después
+Film-Noir,en,frase,a film noir,0.1,0.1281010194108549,después_s2,ambos,después
+Film-Noir,en,palabra,noir,0.3,0.06744853914677133,después_s2,ambos,después

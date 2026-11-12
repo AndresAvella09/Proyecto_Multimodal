@@ -1,0 +1,39 @@
+{
+  "generos_comparados": [
+    "Drama",
+    "Comedy",
+    "Romance",
+    "Thriller",
+    "Crime",
+    "Action",
+    "Adventure",
+    "Horror",
+    "Documentary",
+    "Mystery",
+    "Sci-Fi",
+    "Fantasy",
+    "Family",
+    "Biography",
+    "War",
+    "History",
+    "Music",
+    "Animation",
+    "Musical",
+    "Sport"
+  ],
+  "min_positivos": 10,
+  "n_bootstrap": 1000,
+  "semillas": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "n_por_grupo": {
+    "test_mmimdb": 7784,
+    "control_mmimdb": 1496,
+    "control_tmdb": 1496,
+    "recientes_tmdb": 2997
+  }
+}

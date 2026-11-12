@@ -1,0 +1,68 @@
+{
+  "generos": [
+    "Drama",
+    "Comedy",
+    "Romance",
+    "Thriller",
+    "Crime",
+    "Action",
+    "Adventure",
+    "Horror",
+    "Documentary",
+    "Mystery",
+    "Sci-Fi",
+    "Fantasy",
+    "Family",
+    "Biography",
+    "War",
+    "History",
+    "Music",
+    "Animation",
+    "Musical",
+    "Sport"
+  ],
+  "semillas": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "n_bootstrap": 1000,
+  "semilla_bootstrap": 42,
+  "margen_no_inferioridad": 0.005,
+  "metodos": [
+    "ingenua",
+    "tardia",
+    "compuerta",
+    "tardia3",
+    "compuerta3"
+  ],
+  "entradas": {
+    "tardia": [
+      "imagen",
+      "texto"
+    ],
+    "compuerta": [
+      "imagen",
+      "texto"
+    ],
+    "tardia3": [
+      "imagen",
+      "texto",
+      "fusion_ingenua"
+    ],
+    "compuerta3": [
+      "imagen",
+      "texto",
+      "fusion_ingenua"
+    ]
+  },
+  "n_por_conjunto": {
+    "dev_mmimdb": 2599,
+    "test_mmimdb": 7784,
+    "control_mmimdb": 1496,
+    "control_tmdb": 1496,
+    "recientes_tmdb": 2997
+  }
+}
