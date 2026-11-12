@@ -1,0 +1,10 @@
+modo,etapa,p@10,mAP
+poster,antes,"0.417 [0.309, 0.522]","0.209 [0.149, 0.276]"
+poster,después,"0.672 [0.569, 0.774]","0.373 [0.289, 0.461]"
+poster,diferencia,mejora en 22/22 géneros,"+0.164 [+0.131, +0.202]"
+sinopsis,antes,"0.533 [0.425, 0.641]","0.226 [0.164, 0.288]"
+sinopsis,después,"0.728 [0.626, 0.823]","0.453 [0.369, 0.542]"
+sinopsis,diferencia,mejora en 22/22 géneros,"+0.227 [+0.188, +0.263]"
+ambos,antes,"0.560 [0.443, 0.665]","0.272 [0.211, 0.338]"
+ambos,después,"0.766 [0.664, 0.864]","0.513 [0.426, 0.599]"
+ambos,diferencia,mejora en 22/22 géneros,"+0.241 [+0.200, +0.284]"

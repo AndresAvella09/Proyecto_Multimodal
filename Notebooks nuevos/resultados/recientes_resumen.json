@@ -1,0 +1,170 @@
+{
+  "n": {
+    "control": 1496,
+    "recientes": 2997
+  },
+  "generos": [
+    "Drama",
+    "Comedy",
+    "Romance",
+    "Thriller",
+    "Crime",
+    "Action",
+    "Adventure",
+    "Horror",
+    "Documentary",
+    "Mystery",
+    "Sci-Fi",
+    "Fantasy",
+    "Family",
+    "Biography",
+    "History",
+    "Music",
+    "Animation",
+    "Sport"
+  ],
+  "alfa": 0.5,
+  "map_despues": {
+    "control_mmimdb": {
+      "poster": 0.41312460593866185,
+      "sinopsis": 0.4864858622953633,
+      "ambos": 0.5515494175791112
+    },
+    "control_tmdb": {
+      "poster": 0.40996616607380154,
+      "sinopsis": 0.48315220527264635,
+      "ambos": 0.5563543974346161
+    },
+    "recientes_tmdb": {
+      "poster": 0.4255971795757303,
+      "sinopsis": 0.5134246929409354,
+      "ambos": 0.5649002696795642
+    }
+  },
+  "epoca": {
+    "poster": {
+      "diferencia": 0.015631013501928734,
+      "ic": [
+        -0.01553327729118564,
+        0.04533273084039079
+      ]
+    },
+    "sinopsis": {
+      "diferencia": 0.03027248766828912,
+      "ic": [
+        -0.007406456020436043,
+        0.06992460538728697
+      ]
+    },
+    "ambos": {
+      "diferencia": 0.00854587224494802,
+      "ic": [
+        -0.026152508105923504,
+        0.04239377383878325
+      ]
+    }
+  },
+  "fuente": {
+    "poster": {
+      "diferencia": -0.0031584398648602918,
+      "ic": [
+        -0.017292164014808993,
+        0.01166796692534595
+      ]
+    },
+    "sinopsis": {
+      "diferencia": -0.0033336570227170095,
+      "ic": [
+        -0.01870626148277383,
+        0.011575168951299624
+      ]
+    },
+    "ambos": {
+      "diferencia": 0.004804979855504907,
+      "ic": [
+        -0.009551541312418983,
+        0.01856536657221507
+      ]
+    }
+  },
+  "mejor_alfa_despues": {
+    "control_mmimdb": 0.4,
+    "control_tmdb": 0.4,
+    "recientes_tmdb": 0.4
+  },
+  "sesgo": {
+    "app|global|ambos": {
+      "cociente": 1.7024650428713342,
+      "cociente_irrelevantes": 2.1192452563167743
+    },
+    "app|global|poster": {
+      "cociente": 1.68342931637368,
+      "cociente_irrelevantes": 1.7909460888118445
+    },
+    "app|global|sinopsis": {
+      "cociente": 1.5181880821829379,
+      "cociente_irrelevantes": 1.6989569883473379
+    },
+    "app|por_fuente|ambos": {
+      "cociente": 1.161922080966963,
+      "cociente_irrelevantes": 0.884995450620503
+    },
+    "app|por_fuente|poster": {
+      "cociente": 0.9439484861357168,
+      "cociente_irrelevantes": 0.8513676131742869
+    },
+    "app|por_fuente|sinopsis": {
+      "cociente": 1.2207966178741938,
+      "cociente_irrelevantes": 1.1287037933343023
+    },
+    "app|por_fuente_media|ambos": {
+      "cociente": 1.1607235794774913,
+      "cociente_irrelevantes": 1.1935076003125262
+    },
+    "app|por_fuente_media|poster": {
+      "cociente": 1.0713888963547988,
+      "cociente_irrelevantes": 0.9178770518046562
+    },
+    "app|por_fuente_media|sinopsis": {
+      "cociente": 1.1531207619940977,
+      "cociente_irrelevantes": 1.1738363895242088
+    },
+    "fuente_pura|global|ambos": {
+      "cociente": 1.0549967487593062,
+      "cociente_irrelevantes": 1.8815014159082957
+    },
+    "fuente_pura|global|poster": {
+      "cociente": 1.214158912950919,
+      "cociente_irrelevantes": 1.2231165710894594
+    },
+    "fuente_pura|global|sinopsis": {
+      "cociente": 1.1919729204019585,
+      "cociente_irrelevantes": 2.013359906041021
+    },
+    "fuente_pura|por_fuente|ambos": {
+      "cociente": 0.8798513728365522,
+      "cociente_irrelevantes": 1.553447995622994
+    },
+    "fuente_pura|por_fuente|poster": {
+      "cociente": 0.9191849404057584,
+      "cociente_irrelevantes": 0.7010639111792952
+    },
+    "fuente_pura|por_fuente|sinopsis": {
+      "cociente": 1.0377344592729267,
+      "cociente_irrelevantes": 1.6146525070301005
+    },
+    "fuente_pura|por_fuente_media|ambos": {
+      "cociente": 0.8801466862530805,
+      "cociente_irrelevantes": 1.8153419873655505
+    },
+    "fuente_pura|por_fuente_media|poster": {
+      "cociente": 0.8491032233922373,
+      "cociente_irrelevantes": 0.6633511348006275
+    },
+    "fuente_pura|por_fuente_media|sinopsis": {
+      "cociente": 1.0650180851891418,
+      "cociente_irrelevantes": 1.8380754185259025
+    }
+  },
+  "correccion_app": "por_fuente"
+}

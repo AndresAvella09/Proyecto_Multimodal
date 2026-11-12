@@ -1,0 +1,43 @@
+medida,modo,etapa,comparacion,diferencia,ic_inf,ic_sup,generos_que_suben,sin_cero
+AP,poster,antes,fuente (control_tmdb − control_mmimdb),-0.0050573754038282966,-0.015305259111460818,0.004795902881535415,6,False
+AP,poster,antes,época (recientes_tmdb − control_tmdb),0.029240327389299707,-0.0029057081411743425,0.06248420772914277,11,False
+AP,poster,después,fuente (control_tmdb − control_mmimdb),-0.0031584398648602918,-0.017292164014808993,0.01166796692534595,9,False
+AP,poster,después,época (recientes_tmdb − control_tmdb),0.015631013501928734,-0.01553327729118564,0.04533273084039079,11,False
+AP,poster,después − antes,adaptador en control_mmimdb,0.17180887179636775,0.13494381095934935,0.21200910475761944,18,True
+AP,poster,después − antes,adaptador en control_tmdb,0.17370780733533575,0.139927782461554,0.21083370016397832,18,True
+AP,poster,después − antes,adaptador en recientes_tmdb,0.16009849344796478,0.1236634246023255,0.19896259293786828,18,True
+AP,sinopsis,antes,fuente (control_tmdb − control_mmimdb),0.01202893594681575,0.0017983274585527762,0.023536207905129853,12,True
+AP,sinopsis,antes,época (recientes_tmdb − control_tmdb),0.050615742330824755,0.025776975843861644,0.07730343490056077,13,True
+AP,sinopsis,después,fuente (control_tmdb − control_mmimdb),-0.0033336570227170095,-0.01870626148277383,0.011575168951299624,10,False
+AP,sinopsis,después,época (recientes_tmdb − control_tmdb),0.03027248766828912,-0.007406456020436043,0.06992460538728697,10,False
+AP,sinopsis,después − antes,adaptador en control_mmimdb,0.2327537711382729,0.19554080068579036,0.2715316218438002,18,True
+AP,sinopsis,después − antes,adaptador en control_tmdb,0.21739117816874015,0.18696226691035106,0.2495673460169056,18,True
+AP,sinopsis,después − antes,adaptador en recientes_tmdb,0.19704792350620448,0.16436665070052667,0.23178732156851242,18,True
+AP,ambos,antes,fuente (control_tmdb − control_mmimdb),-0.001875251375681243,-0.016030888676205703,0.01123099953025582,9,False
+AP,ambos,antes,época (recientes_tmdb − control_tmdb),0.04825125470779144,0.01865788759516239,0.07827612523128401,14,True
+AP,ambos,después,fuente (control_tmdb − control_mmimdb),0.004804979855504907,-0.009551541312418983,0.01856536657221507,11,False
+AP,ambos,después,época (recientes_tmdb − control_tmdb),0.00854587224494802,-0.026152508105923504,0.04239377383878325,10,False
+AP,ambos,después − antes,adaptador en control_mmimdb,0.2433393696747529,0.20319011485955546,0.28870047500711393,18,True
+AP,ambos,después − antes,adaptador en control_tmdb,0.250019600905939,0.21057738274498178,0.29472746421629187,18,True
+AP,ambos,después − antes,adaptador en recientes_tmdb,0.21031421844309559,0.17366848809092933,0.24799071393164732,18,True
+sobre_azar,poster,antes,fuente (control_tmdb − control_mmimdb),-0.005057375403828298,-0.014788575001020238,0.004969528379514852,6,False
+sobre_azar,poster,antes,época (recientes_tmdb − control_tmdb),0.014070241607321473,-0.003769106374776852,0.03216862637667668,11,False
+sobre_azar,poster,después,fuente (control_tmdb − control_mmimdb),-0.0031584398648602957,-0.01828891117492654,0.010994813613181139,9,False
+sobre_azar,poster,después,época (recientes_tmdb − control_tmdb),0.0004609277199504849,-0.026207543426833166,0.025997191359386704,8,False
+sobre_azar,poster,después − antes,adaptador en control_mmimdb,0.17180887179636775,0.13323779983449482,0.2132297742100388,18,True
+sobre_azar,poster,después − antes,adaptador en control_tmdb,0.17370780733533575,0.13884975528917268,0.21226738753560953,18,True
+sobre_azar,poster,después − antes,adaptador en recientes_tmdb,0.16009849344796473,0.12386168720895471,0.19915302870704024,18,True
+sobre_azar,sinopsis,antes,fuente (control_tmdb − control_mmimdb),0.012028935946815745,0.0015889629551500992,0.02312112797474546,12,True
+sobre_azar,sinopsis,antes,época (recientes_tmdb − control_tmdb),0.03544565654884652,0.016970755164445156,0.057159642327030746,15,True
+sobre_azar,sinopsis,después,fuente (control_tmdb − control_mmimdb),-0.0033336570227170017,-0.01874528540176919,0.011764643909633058,10,False
+sobre_azar,sinopsis,después,época (recientes_tmdb − control_tmdb),0.015102401886310873,-0.017891572569330487,0.04873837662871074,8,False
+sobre_azar,sinopsis,después − antes,adaptador en control_mmimdb,0.2327537711382729,0.19788262481656071,0.2685137333564322,18,True
+sobre_azar,sinopsis,después − antes,adaptador en control_tmdb,0.21739117816874015,0.18820564448164098,0.24842298635404864,18,True
+sobre_azar,sinopsis,después − antes,adaptador en recientes_tmdb,0.19704792350620448,0.1653257415391203,0.2323824701490247,18,True
+sobre_azar,ambos,antes,fuente (control_tmdb − control_mmimdb),-0.001875251375681246,-0.015080314136232554,0.011076772609267215,9,False
+sobre_azar,ambos,antes,época (recientes_tmdb − control_tmdb),0.033081168925813205,0.013003830585573877,0.055966699715023945,14,True
+sobre_azar,ambos,después,fuente (control_tmdb − control_mmimdb),0.004804979855504908,-0.009902655943378842,0.018641282746382815,11,False
+sobre_azar,ambos,después,época (recientes_tmdb − control_tmdb),-0.006624213537030204,-0.039910720737760905,0.027678701683427544,6,False
+sobre_azar,ambos,después − antes,adaptador en control_mmimdb,0.2433393696747529,0.20433435260305555,0.28556684848048786,18,True
+sobre_azar,ambos,después − antes,adaptador en control_tmdb,0.250019600905939,0.2083345289503524,0.2948033616034368,18,True
+sobre_azar,ambos,después − antes,adaptador en recientes_tmdb,0.2103142184430956,0.1729232960067424,0.25002882688955413,18,True
