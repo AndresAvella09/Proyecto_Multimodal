@@ -7,6 +7,9 @@ data/
 *.tar.gz
 *.zip
 
+# Datos de la app (se descargan de Hugging Face o los genera scripts/exportar_app.py)
+app/datos/
+
 # Archivos de herramientas locales
 .atl/
 __pycache__/

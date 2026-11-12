@@ -65,7 +65,7 @@ Todos los encoders se usan **congelados**: solo se entrenan capas pequeñas enci
 | 10 | `10_buscador_evaluacion` | Sinopsis con E5 y evaluación del buscador (precision@10, mAP) |
 | 11 | `11_buscador_adaptado` | Adaptador entrenado por modalidad: representación y búsqueda antes vs. después |
 | 12 | `12_buscador_recientes` | Agrega al buscador las películas 2020-2026 (sin reentrenar) y mide el efecto de la fuente y de la época en la búsqueda |
-| 13 | `13_app_buscador` | App web del buscador en Streamlit (MM-IMDB + estrenos 2020-2026) |
+| 13 | `13_app_buscador` | Exporta los datos de la app (`scripts/exportar_app.py`), la lanza desde Colab y la publica en Hugging Face |
 
 Los notebooks 01-08 son la base común. Desde ahí hay dos líneas:
 
@@ -169,15 +169,61 @@ detecta, porque la rama que falla no anuncia su incertidumbre.
   corresponde en el top 50, y el doble entre los errores. El sesgo viene de la época, no de la fuente. Estandarizar
   los puntajes **dentro de cada fuente** lo baja a 1.16 y cuesta 0.002 de mAP; es la corrección que usa la app.
 
+## La app
+
+Una app web en Streamlit (`app/`) junta las dos partes del proyecto. Usa el código de `src/` (el mismo de los
+notebooks) y no entrena nada: todo lo pesado se calcula antes, al exportar.
+
+| Página | Qué muestra |
+| --- | --- |
+| Inicio | Portada |
+| Buscador | Búsqueda por póster, sinopsis o ambos, sin entrenar o con el adaptador, con los estrenos 2020-2026 (z-score por fuente). Incluye la arquitectura, los resultados del buscador y la explicación técnica |
+| Clasificador | Para una película del catálogo, los géneros que predicen el póster solo, la sinopsis sola y la fusión (modelos del 06, logits precalculados: no carga CLIP ni DistilBERT) |
+| Desbalance | En esa misma película: apagar cada rama, pesos de la compuerta del C1 y el dial del C2 (borrado, ruido o mezcla con otra película) |
+| Ayer y hoy | Resultados del 08, 12 y C1-C3 leídos de `results/`: fuente contra época, tabla final de métodos y fallos por género |
+| Espacio 3D | PCA y UMAP en 3D (Plotly) de los géneros antes y después del adaptador |
+
+**Datos.** `scripts/exportar_app.py` (sección 1 del notebook 13, en Colab con el Drive montado) llena
+`app_buscador/` en Drive: `catalogo.parquet` (con los pósters), vectores del buscador, `clasificador.npz` (logits
+calibrados por película, umbrales, pesos de las cabezas y de las compuertas), `clasif_img.npy` y `clasif_txt.npy`,
+`espacio3d.parquet`, `config.json` y una copia de los CSV de `results/` y `resultados/`. Todo sin pickle. La app busca
+esa carpeta en `APP_DATOS`, luego en `app/datos/` (ignorada por git) y, si se define `APP_DATASET`, la descarga de ese
+repo de datasets de Hugging Face.
+
+**Correrla en la PC.** Copiar `app_buscador/` de Drive a `app/datos/` y, desde la raíz del repo:
+
+```bash
+pip install -r app/requirements.txt
+```
+
+```bash
+streamlit run app/Inicio.py
+```
+
+**Publicarla en Hugging Face** (sección 4 del notebook 13). `scripts/publicar_hf.py` sube los datos (~400 MB) a un
+repo de datasets privado y el código (`app/`, `src/`, los CSV de `results/`, `app/Dockerfile` y
+`app/requirements.txt`) a un Space de Docker, y le pone al Space la variable `APP_DATASET`. Pasos:
+
+1. Crear un token de escritura en Hugging Face y guardarlo en los Secretos de Colab como `HF_TOKEN`. Las llaves de
+   TMDB y de Hugging Face **solo** van en los Secretos de Colab o del Space, nunca en el código: el repo es público.
+2. Correr la sección 4 del notebook 13 con `USUARIO_HF` y `PUBLICAR = True`.
+3. En el Space, *Settings → Variables and secrets*, agregar el secreto `HF_TOKEN` con un token de **lectura** (el
+   dataset es privado). La primera construcción tarda unos 5-10 minutos.
+
+Las páginas que necesitan algo que falta (por ejemplo los CSV del C2 y el C3 si no están en `results/`) muestran un
+aviso en vez de fallar.
+
 ## Estructura del repositorio
 
 | Carpeta | Contenido |
 | --- | --- |
 | `notebooks/` | Notebooks 01-13 y C1-C3 (se abren en Colab con el botón de cada uno) |
 | `src/` | Código compartido: carga de datos, encoders, modelos, métricas, fusión y buscador |
+| `app/` | App web en Streamlit (`Inicio.py`, `comun.py`, `pages/`), `Dockerfile` y `requirements.txt` del Space |
+| `scripts/` | `exportar_app.py` (datos de la app) y `publicar_hf.py` (Hugging Face) |
 | `docs/` | Propuesta inicial, brief y material de estudio |
 | `results/` | Tablas de resultados de clasificación (`exp1`-`exp6`) y del buscador (`results/buscador/`) |
-| `configs/`, `scripts/` | Parámetros y scripts ejecutables |
+| `configs/` | Parámetros |
 
 ## Cómo reproducir
 
@@ -190,7 +236,7 @@ Mi unidad/proyecto_multimodal/
 ├── modelos/       # pesos de los adaptadores del buscador
 ├── results/       # clasificación y comparación temporal (06-08, C1-C3): CSV y artefactos de los modelos
 ├── resultados/    # buscador (10-12): CSV
-└── app_buscador/  # lo que exporta el notebook 13
+└── app_buscador/  # datos de la app (scripts/exportar_app.py, desde el notebook 13)
 ```
 
 Todo tiene que estar en **una sola carpeta** `proyecto_multimodal`: si la corren dos personas, una la comparte
