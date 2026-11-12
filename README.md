@@ -70,6 +70,7 @@ Los notebooks 01-08 son la base común. Desde ahí hay dos líneas:
 | # | Notebook | Qué hace |
 | --- | --- | --- |
 | C1 | `C1_fusion_incertidumbre` | Fusión ponderada por incertidumbre (compuerta por entropía) contra la fusión ingenua, en los cuatro grupos del 08 |
+| C2 | `C2_dial_degradacion` | Provoca el desbalance: degrada una modalidad en test (borrado vs. ruido) y entrena con pocos datos; compuerta ajustada con degradación sintética |
 
 `multimodal_exploration.ipynb` es un notebook didáctico que construye un mini-CLIP desde cero.
 
@@ -133,7 +134,7 @@ Mi unidad/proyecto_multimodal/
 ├── data/          # parquets (meta, años, TMDB), miniaturas de pósters
 ├── embeddings/    # vectores .npy (CLIP, DistilBERT, E5, adaptados)
 ├── modelos/       # pesos de los adaptadores del buscador
-├── results/       # clasificación y comparación temporal (06-08, C1…): CSV y artefactos de los modelos
+├── results/       # clasificación y comparación temporal (06-08, C1, C2…): CSV y artefactos de los modelos
 ├── resultados/    # buscador (10-12): CSV
 └── app_buscador/  # lo que exporta el notebook 13
 ```
