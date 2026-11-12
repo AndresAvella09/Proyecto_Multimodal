@@ -97,3 +97,79 @@ def entrenar(xs_tr, y_tr, xs_dev, y_dev, cfg, semilla):
     modelo.load_state_dict(mejor_estado)
     hist['mejor_epoca'] = int(np.argmax(hist['ap_dev'])) + 1
     return modelo, hist
+
+
+@torch.no_grad()
+def aporte_por_modalidad(modelo, xs, y):
+    """Puntaje de cada modalidad dentro de la fusión ingenua (para OGM-GE).
+
+    La salida es lineal sobre la concatenación de ReLU(proyección_m), así que el logit se separa en una
+    parte por modalidad: z_m = W_m h_m + b / 2. El puntaje es la probabilidad media que z_m le da a los
+    géneros correctos (el análogo multietiqueta de la suma de softmax de la clase correcta del artículo).
+    """
+    lineal, d = modelo.salida[-1], modelo.proys[0].out_features
+    s = []
+    for k, (p, x) in enumerate(zip(modelo.proys, xs)):
+        z = F.relu(p(x)) @ lineal.weight[:, k * d:(k + 1) * d].T + lineal.bias / 2
+        s.append(((torch.sigmoid(z) * y).sum() / y.sum().clamp(min=1)).item())
+    return s
+
+
+def entrenar_ogm(xs_tr, y_tr, xs_dev, y_dev, cfg, semilla, alfa, ge=True):
+    """Fusión ingenua entrenada con OGM-GE (Peng et al., CVPR 2022), dos modalidades.
+
+    En cada lote: r = s_0 / s_1 (aporte_por_modalidad). A la modalidad que domina (r > 1) se le
+    multiplica el gradiente de su proyección por k = 1 - tanh(alfa * (r - 1)); la otra queda con k = 1.
+    Con ge=True se suma ruido gaussiano con la desviación del gradiente a las proyecciones
+    (Generalization Enhancement). Mismo early stopping que `entrenar`. El historial guarda el r medio
+    y los coeficientes de cada época.
+    """
+    assert len(xs_tr) == 2
+    fijar_semilla(semilla)
+    device = xs_tr[0].device
+    modelo = Clasificador([x.shape[1] for x in xs_tr], cfg['dim_proy'], cfg['dropout'], y_tr.shape[1]).to(device)
+    opt = torch.optim.AdamW(modelo.parameters(), lr=cfg['lr'], weight_decay=cfg['weight_decay'])
+    gen = torch.Generator(device='cpu').manual_seed(semilla)
+    gen_ruido = torch.Generator(device=device).manual_seed(semilla)
+
+    n = len(y_tr)
+    mejor_ap, mejor_estado, sin_mejora = -1, None, 0
+    hist = {'perdida_train': [], 'ap_dev': [], 'razon': [], 'k0': [], 'k1': []}
+    for _ in range(cfg['max_epocas']):
+        modelo.train()
+        perm = torch.randperm(n, generator=gen).to(device)
+        total, rs, ks = 0.0, [], []
+        for a in range(0, n, cfg['batch']):
+            b = perm[a:a + cfg['batch']]
+            xb, yb = [x[b] for x in xs_tr], y_tr[b]
+            perdida = F.binary_cross_entropy_with_logits(modelo(xb), yb)
+            opt.zero_grad()
+            perdida.backward()
+            s0, s1 = aporte_por_modalidad(modelo, xb, yb)
+            r = s0 / max(s1, 1e-8)
+            k = [1 - np.tanh(alfa * max(r - 1, 0)), 1 - np.tanh(alfa * max(1 / max(r, 1e-8) - 1, 0))]
+            for km, proy in zip(k, modelo.proys):
+                for prm in proy.parameters():
+                    g = prm.grad
+                    ruido = (torch.randn(g.shape, generator=gen_ruido, device=device) * (g.std() + 1e-8)) if ge else 0
+                    prm.grad = g * km + ruido
+            opt.step()
+            total += perdida.item() * len(b)
+            rs.append(r)
+            ks.append(k)
+        ap = average_precision_score(y_dev, predecir_logits(modelo, xs_dev), average='macro')
+        hist['perdida_train'].append(total / n)
+        hist['ap_dev'].append(ap)
+        hist['razon'].append(float(np.mean(rs)))
+        hist['k0'].append(float(np.mean([k[0] for k in ks])))
+        hist['k1'].append(float(np.mean([k[1] for k in ks])))
+        if ap > mejor_ap:
+            mejor_ap, sin_mejora = ap, 0
+            mejor_estado = {k_: v.detach().clone() for k_, v in modelo.state_dict().items()}
+        else:
+            sin_mejora += 1
+            if sin_mejora >= cfg['paciencia']:
+                break
+    modelo.load_state_dict(mejor_estado)
+    hist['mejor_epoca'] = int(np.argmax(hist['ap_dev'])) + 1
+    return modelo, hist
